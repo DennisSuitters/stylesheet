@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="description" content="the Minimal HTML5 classless Stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <title>{stylesheet} - the Minimal HTML5 classless Stylesheet</title>
+  </head>
+  <body>
+    <address>
+      <aside>
+        <a href="/"><img alt="Logo" src="./img/stylesheet.svg"></a>
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+    </address>
+    <header>
+      <nav role="mobile-menu">
+        <input type="checkbox" id="mobile-menu">
+        <label for="mobile-menu" onclick>Menu</label>
+        <ul>
+          <li>Menu Item 1</li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Dropdown Menu Item</a>
+            <ul>
+              <li><a href="#">Sublink 1</a></li>
+              <li><a href="#">Sublink 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section data-content="covertron" style="background-image:url(./img/cradle-in-autumn.jpg);"></section>
+    <section data-content="jumbotron">
+      <header>
+        <h1>Fluid jumbotron</h1>
+      </header>
+      <h2>Page Heading with <i>Italics</i> and <u>Underline</u></h2>
+      <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <p>Page Subheading with <mark>highlighting</mark></p>
+      <p><a href="#" role="button"><i>Italic Link Button</i></a>&nbsp;<a href="#" role="button"><b>Bold Link Button &rarr;</b></a></p>
+    </section>
+    <section data-content="slidertron">
+      <input checked id="slide1" name="slides" type="radio">
+      <input id="slide2" name="slides" type="radio">
+      <div class="slider-arrow-nav">
+        <label class="slider-arrow prev" for="slide1"></label>
+        <label class="slider-arrow prev" for="slide2"></label>
+      </div>
+      <div class="slider-arrow-nav">
+        <label class="slider-arrow next" for="slide1"></label>
+        <label class="slider-arrow next" for="slide2"></label>
+      </div>
+      <div class='slider-content'>
+
+    			<div class="slider slide1">
+    				<img src="./img/autumn-in-lower-wilmot.jpg" alt="Slide 1">
+  				  <div class="slider-caption">
+  						<h2>Slide 1</h2>
+  						Caption for slide 1.
+            </div>
+    			</div>
+
+          <div class="slider slide2">
+    				<img src="./img/cradle-in-autumn.jpg" alt="Slide 2">
+  				  <div class="slider-caption">
+  						<h2>Slide 2</h2>
+  						Caption for slide 2.
+            </div>
+    			</div>
+
+      </div>
+
+    </section>
+    <main>
+      <section>
+        <header>
+          <h2>Section Heading</h2>
+          <p>Section Subheading</p>
+          <p>Standard un-data'd cards</p>
+        </header>
+        <article>
+          <h3>Card heading</h3>
+          <p>Card content*</p>
+          <p><small>*with small content</small></p>
+        </article>
+        <article>
+          <h3>Card heading</h3>
+          <p>Card content</p>
+        </article>
+        <article>
+          <h3>Card heading</h3>
+          <p>Card content</p>
+        </article>
+        <article>
+          <h3>Card heading</h3>
+          <p>Card content</p>
+        </article>
+      </section>
+      <hr>
+      <section>
+        <section data-content="content-items">
+          <header>
+            <h2>Section Heading</h2>
+            <p>Section Subheading</p>
+            <p>data'd cards</p>
+          </header>
+          <article data-content="card">
+            <img src="./img/noimage.png" alt="Sample">
+            <h3>Card heading</h3>
+            <p>Card content*</p>
+            <p><small>*with small content</small></p>
+          </article>
+          <article data-content="card">
+            <img src="./img/noimage.png" alt="Sample">
+            <h3>Card heading</h3>
+            <p>Card content <sup>with notification</sup></p>
+          </article>
+          <article data-content="card">
+            <img src="./img/noimage.png" alt="Sample">
+            <h3>Card heading</h3>
+            <p>Card content</p>
+          </article>
+        </section>
+        <aside data-content="sidemenu">
+          Aside Contents
+        </aside>
+      </section>
+      <hr>
+      <section>
+        <blockquote>
+          "Quote"
+          <footer><i>- Attribution</i></footer>
+        </blockquote>
+      </section>
+      <hr>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Col A</th>
+              <th>Col B</th>
+              <th>Col C</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Row 1</td>
+            <td>Cell A1</td>
+            <td>Cell B1</td>
+            <td>Cell C1</td>
+          </tr>
+          <tr>
+            <td>Row 2</td>
+            <td>Cell A2</td>
+            <td>Cell B2</td>
+            <td>Cell C2</td>
+          </tr>
+        </table>
+      </section>
+      <hr>
+      <article>
+        <h2>Left-aligned header</h2>
+        <p>Left-aligned paragraph</p>
+        <aside>
+          <p>Article callout</p>
+        </aside>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+        <figure>
+          <img src="./img/autumn-in-lower-wilmot.jpg" alt="Stock photo">
+          <figcaption><i>Image caption</i></figcaption>
+        </figure>
+      </article>
+      <hr>
+      <div>
+        <details>
+          <summary>Expanable title</summary>
+          <p>Revealed content</p>
+        </details>
+        <details>
+          <summary>Another expanable title</summary>
+          <p>More revealed content</p>
+        </details>
+        <br>
+        <pre>
+          <code>
+            // code sample
+          </code>
+        </pre>
+      </div>
+      <hr>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Form title</legend>
+            <label for="input1">Input label</label>
+            <input type="text" id="input1" name="input1" placeholder="Input Placeholder">
+            <label for="dateinput">Date (unstyled WIP)</label>
+            <input type="date" id="dateinput" name="dateinput">
+            <label for="timeinput">Time (unstyled WIP)</label>
+            <input type="time" id="timeinput" name="timeinput">
+            <label for="datetimeinput">Date/Time (unstyled WIP)</label>
+            <input type="datetime-local" id="datetimeinput" name="datetimeinput">
+            <label for="rangeinput">Range</label>
+            <input type="range" id="rangeinput" name="rangeinput" min="0" max="100" step="1" value="50">
+            <label for="colorinput">Color (unstyled WIP)</label>
+            <input type="color" id="colorinput" name="colorinput">
+            <input type="file" id="fileinput" name="fileinput">
+            <label for="fileinput">File Select Button</label>
+            <label for="checkboxinput">Checkbox</label><br>
+            <input type="checkbox" id="checkboxinput" name="checkboxinput"><br>
+            <label for="radioinput">Radio</label><br>
+            <input type="radio" id="radioinput" name="radioinput"><br>
+            <label for="progress">Progress label</label>
+            <progress id="progress" value="80" max="100"></progress>
+            <label for="meter">Meter label</label>
+            <meter id="meter" min="0" low="10" optimum="50" high="90" max="100"></meter>
+            <label for="select">Select label</label>
+            <select id="select">
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+            </select>
+            <label for="textarea1">Textarea label:</label>
+            <textarea id="textarea1" placeholder="Textarea Placeholder"></textarea>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <hr>
+    </main>
+    <section data-content="testimonials">
+      <header>
+        <h2 class="text-center text-uppercase"><strong><a href="testimonials/">Testimonials</a> <small>Our Clients Love Us!</small></strong></h2>
+      </header>
+      <blockquote>
+        <img src="./img/avatar.jpg" alt="Avatar">
+        <p>Not my bowl of rice sook on the cans rubbish rotten. Hoon joey do the harry sickie booze bus. Blimey holden taking the piss dag cut lunch commando thongs. Cane toad brass razoo tickets on yourself gyno garbo she'll be apples. No wucka's sheila full blown feral fair go bunyip watch out for the greenie what's the john dory? deadset. Sleepout swagger strides sleepout back of bourke porky woop woop crow eaters booze bus as cunning as a kelpie mickey mouse mate. Iffy up yourself he's got a massive donger. Freo billabong pull the wool over your eyes mate's rates avo.</p>
+        <footer>
+          <h3 itemprop="author">Anonymous</h3>
+          <h4>Anonymous</h4>
+        </footer>
+      </blockquote>
+      <blockquote>
+        <img src="./img/avatar.jpg" alt="Avatar">
+        <p>Not my bowl of rice sook on the cans rubbish rotten. Hoon joey do the harry sickie booze bus. Blimey holden taking the piss dag cut lunch commando thongs. Cane toad brass razoo tickets on yourself gyno garbo she'll be apples. No wucka's sheila full blown feral fair go bunyip watch out for the greenie what's the john dory? deadset. Sleepout swagger strides sleepout back of bourke porky woop woop crow eaters booze bus as cunning as a kelpie mickey mouse mate. Iffy up yourself he's got a massive donger. Freo billabong pull the wool over your eyes mate's rates avo.</p>
+        <footer>
+          <h3 itemprop="author">Anonymous</h3>
+          <h4>Anonymous</h4>
+        </footer>
+      </blockquote>
+    </section>
+    <footer data-content="footer">
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+    </footer>
+  </body>
+</html>
