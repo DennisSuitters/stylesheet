@@ -1,4 +1,5 @@
 ![stylesheet](img/stylesheet.svg)
+
 the Minimal HTML5 mostly classless Stylesheet
 
 We've made this stylesheet a base for AuroraCMS as a starting point for theme development. We were originally using Bootstrap, and it is still possible to do that, but we wanted something smaller, faster and easier to implement.

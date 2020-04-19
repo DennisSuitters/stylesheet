@@ -11,7 +11,7 @@
   <body>
     <address>
       <aside>
-        <a href="/"><img alt="Logo" src="./img/stylesheet.svg"></a>
+        <a href="/"><img alt="Logo" src="./img/stylesheet.png"></a>
       </aside>
       <aside>
         Address Information
@@ -168,11 +168,36 @@
         </table>
       </section>
       <hr>
+      <section>
+        <nav data-content="tabs">
+          <ul>
+            <li class="tab-item active"><a class="tab-link" href="#tab1">Tab 1</a></li>
+            <li class="tab-item"><a class="tab-link" href="#tab2">Tab 2</a></li>
+            <li class="tab-item"><a class="tab-link" href="#tab3">Tab 3</a></li>
+            <li class="tab-item"><a class="tab-link" href="#tab4">Tab 4</a></li>
+          </ul>
+        </nav>
+        <div data-content="tabs-content">
+          <div class="tab-pane" id="tab2">
+            Tab 2 content
+          </div>
+          <div class="tab-pane" id="tab3">
+            Tab 3 content
+          </div>
+          <div class="tab-pane" id="tab4">
+            Tab 4 content
+          </div>
+          <div class="tab-pane" id="tab1">
+            Tab 1 content
+          </div>
+        </div>
+      </section>
+      <hr>
       <article>
         <h2>Left-aligned header</h2>
         <p>Left-aligned paragraph</p>
         <aside>
-          <p>Article callout</p>
+          <p>Article &rarr; Aside callout</p>
         </aside>
         <ul>
           <li>List item 1</li>
@@ -182,9 +207,7 @@
           <img src="./img/autumn-in-lower-wilmot.jpg" alt="Stock photo">
           <figcaption><i>Image caption</i></figcaption>
         </figure>
-      </article>
-      <hr>
-      <div>
+        <hr>
         <details>
           <summary>Expanable title</summary>
           <p>Revealed content</p>
@@ -199,7 +222,7 @@
             // code sample
           </code>
         </pre>
-      </div>
+      </article>
       <hr>
       <section>
         <form>
@@ -238,7 +261,6 @@
           </fieldset>
         </form>
       </section>
-      <hr>
     </main>
     <section data-content="testimonials">
       <header>
