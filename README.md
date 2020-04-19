@@ -1,4 +1,4 @@
-![stylesheet](img/stylesheet.svg)
+![stylesheet](img/stylesheet.png)
 
 the Minimal HTML5 mostly classless Stylesheet
 
@@ -11,3 +11,17 @@ Some things we take into account:
 - Cleanliness.
 - Cross-Browser styling.
 - Text Ledgibility (Text sizing for easy reading).
+
+Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add features (Note: No Javascript was used):
+- Mobile Collapse Navigation `role="mobile-menu"`
+- Covertron `data-content="covertron"`
+- Jumbotron `data-content="jumbotron"`
+- Slidertron `data-content="slidertron"`
+- Tabs `data-content="tabs"`
+- Testimonials section `data-content="testimonials"`
+
+TODO: (Pull Requests Welcome)
+- Accordian
+- Alerts
+- Breadcrumbs
+- Dialogs
