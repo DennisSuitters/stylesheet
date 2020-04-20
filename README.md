@@ -1,4 +1,4 @@
-![stylesheet](img/stylesheet.png) v0.2
+![stylesheet](img/stylesheet.png) v0.3
 
 the Minimal HTML5 mostly classless Stylesheet
 
@@ -13,15 +13,23 @@ Some things we take into account:
 - Text Ledgibility (Text sizing for easy reading).
 
 Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add features (Note: No Javascript was used):
-- Mobile Collapse Navigation `role="mobile-menu"`
+- Mobile Collapse Navigation `role="menubar"`
+- Breadcrumbs `data-content="breadcrumb"`
 - Covertron `data-content="covertron"`
 - Jumbotron `data-content="jumbotron"`
 - Slidertron `data-content="slidertron"`
 - Tabs `data-content="tabs"`
 - Testimonials section `data-content="testimonials"`
+- Alerts `data-content="alert"` or `data-content="alert-(danger/success/warning)"` for alert types.
 
 TODO: (Pull Requests Welcome)
 - Accordian
-- Alerts
-- Breadcrumbs
 - Dialogs
+
+## CHANGELOG:
+#### v0.3
+- Fix Tab styling
+- Add Table zebra
+- Adjust :root vars to better reflect their used
+- Add Breadcrumb Styling
+- Change Responsive Menu to use proper role value.

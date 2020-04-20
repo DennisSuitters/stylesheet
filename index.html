@@ -24,7 +24,7 @@
       </aside>
     </address>
     <header>
-      <nav role="mobile-menu">
+      <nav role="menubar">
         <input type="checkbox" id="mobile-menu">
         <label for="mobile-menu" onclick>Menu</label>
         <ul>
@@ -39,6 +39,12 @@
         </ul>
       </nav>
     </header>
+    <div data-content="breadcrumb">
+      <span data-content="breadcrumb-item"><a href="#">Item 1</a></span>
+      <span data-content="breadcrumb-item"><a href="#">Item 1</a></span>
+      <span data-content="breadcrumb-item"><a href="#">Item 1</a></span>
+      <span data-content="breadcrumb-item"><a href="#">Item 1</a></span>
+    </div>
     <section data-content="covertron" style="background-image:url(./img/cradle-in-autumn.jpg);"></section>
     <section data-content="jumbotron">
       <header>
@@ -61,25 +67,21 @@
         <label class="slider-arrow next" for="slide2"></label>
       </div>
       <div class='slider-content'>
-
-    			<div class="slider slide1">
-    				<img src="./img/autumn-in-lower-wilmot.jpg" alt="Slide 1">
-  				  <div class="slider-caption">
-  						<h2>Slide 1</h2>
-  						Caption for slide 1.
-            </div>
-    			</div>
-
-          <div class="slider slide2">
-    				<img src="./img/cradle-in-autumn.jpg" alt="Slide 2">
-  				  <div class="slider-caption">
-  						<h2>Slide 2</h2>
-  						Caption for slide 2.
-            </div>
-    			</div>
-
+        <div class="slider slide1">
+          <img src="./img/autumn-in-lower-wilmot.jpg" alt="Slide 1">
+          <div class="slider-caption">
+            <h2>Slide 1</h2>
+            Caption for slide 1.
+          </div>
+        </div>
+        <div class="slider slide2">
+          <img src="./img/cradle-in-autumn.jpg" alt="Slide 2">
+          <div class="slider-caption">
+            <h2>Slide 2</h2>
+            Caption for slide 2.
+          </div>
+        </div>
       </div>
-
     </section>
     <main>
       <section>
@@ -165,13 +167,25 @@
             <td>Cell B2</td>
             <td>Cell C2</td>
           </tr>
+          <tr>
+            <td>Row 3</td>
+            <td>Cell A3</td>
+            <td>Cell B3</td>
+            <td>Cell C3</td>
+          </tr>
+          <tr>
+            <td>Row 4</td>
+            <td>Cell A4</td>
+            <td>Cell B4</td>
+            <td>Cell C4</td>
+          </tr>
         </table>
       </section>
       <hr>
       <section>
         <nav data-content="tabs">
           <ul>
-            <li class="tab-item"><a class="tab-link" href="#tab1">Tab 1</a></li>
+            <li class="tab-item active"><a class="tab-link" href="#tab1">Tab 1</a></li>
             <li class="tab-item"><a class="tab-link" href="#tab2">Tab 2</a></li>
             <li class="tab-item"><a class="tab-link" href="#tab3">Tab 3</a></li>
             <li class="tab-item"><a class="tab-link" href="#tab4">Tab 4</a></li>
@@ -282,6 +296,28 @@
           <h4>Anonymous</h4>
         </footer>
       </blockquote>
+    </section>
+    <section>
+      <div data-content="alert">
+        <h1>This is an default Alert Heading!!!</h1>
+        This is standard text with a <a href="#">Link</a>.
+      </div>
+      <div data-content="alert-info">
+        <h1>This is an info Alert Heading!!!</h1>
+        This is standard text with a <a href="#">Link</a>.
+      </div>
+      <div data-content="alert-danger">
+        <h1>This is an danger Alert Heading!!!</h1>
+        This is standard text with a <a href="#">Link</a>.
+      </div>
+      <div data-content="alert-success">
+        <h1>This is an success Alert Heading!!!</h1>
+        This is standard text with a <a href="#">Link</a>.
+      </div>
+      <div data-content="alert-warning">
+        <h1>This is an warning Alert Heading!!!</h1>
+        This is standard text with a <a href="#">Link</a>.
+      </div>
     </section>
     <footer data-content="footer">
       <aside>
