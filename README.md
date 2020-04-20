@@ -1,4 +1,4 @@
-![stylesheet](img/stylesheet.png)
+![stylesheet](img/stylesheet.png) v0.2
 
 the Minimal HTML5 mostly classless Stylesheet
 
