@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="./img/favicon.png" type="image/png">
     <title>{stylesheet} - the Minimal HTML5 classless Stylesheet</title>
+    <script src="./script/dialog-polyfill.js"></script>
   </head>
   <body>
     <address>
@@ -298,6 +299,17 @@
       </blockquote>
     </section>
     <section>
+      <header>
+        <h2>Dialog's</h2>
+      </header>
+      <p>
+        Using the <code>&lt;dialog/&gt;</code> element is done natively in Chrome and via a Polyfill in other Browsers.<br>
+        For more information visit this repository: <a href="https://github.com/GoogleChrome/dialog-polyfill">https://github.com/GoogleChrome/dialog-polyfill</a><br>
+        <br>
+        <button onclick="dialog.showModal();">Open Dialog</button>
+      </p>
+    </section>
+    <section>
       <div data-content="alert">
         <h1>This is an default Alert Heading!!!</h1>
         This is standard text with a <a href="#">Link</a>.
@@ -333,5 +345,21 @@
         Address Information
       </aside>
     </footer>
+    <dialog>
+      <header>
+        <h5>Dialog Heading</h5>
+        <button type="button" class="close" aria-label="Close" onclick="dialog.close();"><span aria-hidden="true">&times;</span></button>
+      </header>
+      <section>
+        Dialog Content
+      </section>
+      <footer>
+        <button onclick="dialog.close();">Close</button>
+      </footer>
+    </dialog>
+    <script>
+      var dialog = document.querySelector('dialog');
+      dialogPolyfill.registerDialog(dialog);
+    </script>
   </body>
 </html>
