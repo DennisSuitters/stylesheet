@@ -1,4 +1,4 @@
-![stylesheet](img/stylesheet.png) v0.4
+![stylesheet](img/stylesheet.png) v0.5
 
 the Minimal HTML5 mostly classe-less Stylesheet
 
@@ -24,11 +24,13 @@ Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add feat
 - Testimonials section `data-content="testimonials"`
 - Alerts `data-content="alert"` or `data-content="alert-(danger/success/warning)"` for alert types.
 - Dialog, native to Chrome, but as a Polyfill for other browsers, instructional links are in the example file.
-
-TODO: (Pull Requests Welcome)
-- Accordian
+- Tooltips `data-tooltip="[top|right|bottom|left]"`
 
 ## CHANGELOG:
+#### v0.5
+- Add Tooltips
+- Start adding code snippets to example file
+
 #### v0.4
 - Fix Typo's
 - Add Dialog styling and instructional links on using a polyfil for browsers that don't yet support the element

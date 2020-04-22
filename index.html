@@ -300,6 +300,35 @@
     </section>
     <section>
       <header>
+        <h2>Tooltip's</h2>
+      </header>
+      <p>
+        <button data-tooltip="top" title="Tooltip Top">Top Tooltip</button><br>
+        <br>
+        <button data-tooltip="right" title="Tooltip Right">Right Tooltip</button><br>
+        <br>
+        <button data-tooltip="bottom" title="Tooltip Bottom">Bottom Tooltip</button><br>
+        <br>
+        <button data-tooltip="left" title="Tooltip Left">Left Tooltip</button><br>
+        <br>
+      </p>
+    </section>
+    <figure class="highlight">
+      <pre>
+        <code>
+<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"top"</span> <span class="a">title=</span><span class="av">"Tooltip Top"</span><span class="e">&gt;</span>Top Tooltip<span class="e">&lt;/button&gt;</span>
+
+<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"right"</span> <span class="a">title=</span><span class="av">"Tooltip Right"</span><span class="e">&gt;</span>Right Tooltip<span class="e">&lt;/button&gt;</span>
+
+<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"bottom"</span> <span class="a">title=</span><span class="av">"Tooltip Bottom"</span><span class="e">&gt;</span>Bottom Tooltip<span class="e">&lt;/button&gt;</span>
+
+<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"left"</span> <span class="a">title=</span><span class="av">"Tooltip Left"</span><span class="e">&gt;</span>Left Tooltip<span class="e">&lt;/button&gt;</span>
+        </code>
+      </pre>
+    </figure>
+    <hr>
+    <section>
+      <header>
         <h2>Dialog's</h2>
       </header>
       <p>
@@ -309,27 +338,101 @@
         <button onclick="dialog.showModal();">Open Dialog</button>
       </p>
     </section>
+    <figure class="highlight">
+      <pre>
+        <code>
+<span class="e">&lt;dialog&gt;</span>
+  <span class="e">&lt;header&gt;</span>
+    <span class="e">&lt;h5&gt;</span>Dialog Heading<span class="e">&lt;/h5&gt;</span>
+    <span class="e">&lt;button </span><span class="a">type=</span><span class="av">"button"</span> <span class="a">class=</span><span class="av">"close"</span> <span class="a">aria-label=</span><span class="av">"Close"</span> <span class="a">onclick=</span><span class="av">"dialog.close();"</span><span class="e">&gt;</span>
+      <span class="e">&lt;span</span>
+        <span class="a">aria-hidden=</span><span class="av">"true"</span><span class="e">&gt;</span>
+        &times;
+      <span class="e">&lt;/span&gt;</span>
+    <span class="e">&lt;/button&gt;</span>
+  <span class="e">&lt;/header&gt;</span>
+  <span class="e">&lt;section&gt;</span>
+    Dialog Content
+  <span class="e">&lt;/section&gt;</span>
+  <span class="e">&lt;footer&gt;</span>
+    <span class="e">&lt;button </span><span class="a">onclick=</span><span class="av">"dialog.close();"</span><span class="e">&gt;</span>Close<span class="e">&lt;/button&gt;</span>
+  <span class="e">&lt;/footer&gt;</span>
+<span class="e">&lt;/dialog&gt;</span>
+<span class="e">&lt;script </span><span class="a">src=</span><span class="av">"dialog-polyfill.js"</span><span class="e">&gt;&lt;/script&gt;</span>
+<span class="e">&lt;script&gt;</span>
+  var dialog = document.querySelector('dialog');
+  dialogPolyfill.registerDialog(dialog);
+<span class="e">&lt;/script&gt;</span>
+        </code>
+      </pre>
+    </figure>
+    <hr>
     <section>
-      <div data-content="alert">
-        <h1>This is an default Alert Heading!!!</h1>
-        This is standard text with a <a href="#">Link</a>.
-      </div>
-      <div data-content="alert-info">
-        <h1>This is an info Alert Heading!!!</h1>
-        This is standard text with a <a href="#">Link</a>.
-      </div>
-      <div data-content="alert-danger">
-        <h1>This is an danger Alert Heading!!!</h1>
-        This is standard text with a <a href="#">Link</a>.
-      </div>
-      <div data-content="alert-success">
-        <h1>This is an success Alert Heading!!!</h1>
-        This is standard text with a <a href="#">Link</a>.
-      </div>
-      <div data-content="alert-warning">
-        <h1>This is an warning Alert Heading!!!</h1>
-        This is standard text with a <a href="#">Link</a>.
-      </div>
+      <header>
+        <h2>Alerts</h2>
+      </header>
+      <article data-content="full">
+        <p>
+          Alerts provide feedback messages for typical actions and include some contextual styling depending on the type of alert required.<br>
+          The width of Alerts depend on their parent containers width, unless their width is explicitly changed on the element or in the stylesheet declarations.<br>
+          <br>
+          <br>
+          <div data-content="alert">
+            <h1>This is an default Alert Heading!!!</h1>
+            This is standard text with a <a href="#">Link</a>.
+          </div>
+          <br>
+          <div data-content="alert-info">
+            <h1>This is an info Alert Heading!!!</h1>
+            This is standard text with a <a href="#">Link</a>.
+          </div>
+          <br>
+          <div data-content="alert-danger">
+            <h1>This is an danger Alert Heading!!!</h1>
+            This is standard text with a <a href="#">Link</a>.
+          </div>
+          <br>
+          <div data-content="alert-success">
+            <h1>This is an success Alert Heading!!!</h1>
+            This is standard text with a <a href="#">Link</a>.
+          </div>
+          <br>
+          <div data-content="alert-warning">
+            <h1>This is an warning Alert Heading!!!</h1>
+            This is standard text with a <a href="#">Link</a>.
+          </div>
+          <br>
+<figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;div</span> <span class="a">data-content=</span><span class="av">"alert"</span><span class="e">&gt;</span>
+  <span class="e">&lt;h1&gt;</span>This is the default Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
+  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
+<span class="e">&lt;/div&gt;</span>
+
+<span class="e">&lt;div</span> <span class="a">data-content=</span><span class="av">"alert-info"</span><span class="e">&gt;</span>
+  <span class="e">&lt;h1&gt;</span>This is an Info Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
+  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
+<span class="e">&lt;/div&gt;</span>
+
+<span class="e">&lt;div</span> <span class="a">data-content=</span><span class="av">"alert-danger"</span><span class="e">&gt;</span>
+  <span class="e">&lt;h1&gt;</span>This is a Danger Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
+  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
+<span class="e">&lt;/div&gt;</span>
+
+<span class="e">&lt;div</span> <span class="a">data-content=</span><span class="av">"alert-success"</span><span class="e">&gt;</span>
+  <span class="e">&lt;h1&gt;</span>This is a Success Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
+  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
+<span class="e">&lt;/div&gt;</span>
+
+<span class="e">&lt;div</span> <span class="a">data-content=</span><span class="av">"alert-warning"</span><span class="e">&gt;</span>
+  <span class="e">&lt;h1&gt;</span>This is a Warning Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
+  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
+<span class="e">&lt;/div&gt;</span>
+</code>
+</pre>
+</figure>
+      </article>
     </section>
     <footer data-content="footer">
       <aside>
