@@ -1,6 +1,6 @@
-![stylesheet](img/stylesheet.png) v0.5
+![stylesheet](img/stylesheet.png) v0.6
 
-the Minimal HTML5 mostly classe-less Stylesheet
+the Minimal HTML5 mostly classeless Stylesheet
 
 No SASS, No LESS, just plain good 'ol CSS.
 
@@ -16,17 +16,21 @@ Some things we take into account:
 
 Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add features (Note: No Javascript is used):
 - Mobile Collapse Navigation `role="menubar"`
-- Breadcrumbs `data-content="breadcrumb"`
+- Breadcrumbs `class="breadcrumb"`
 - Covertron `data-content="covertron"`
 - Jumbotron `data-content="jumbotron"`
 - Slidertron `data-content="slidertron"`
 - Tabs `data-content="tabs"`
-- Testimonials section `data-content="testimonials"`
-- Alerts `data-content="alert"` or `data-content="alert-(danger/success/warning)"` for alert types.
+- Alerts `class="alert"` or `class="alert alert-(danger/success/warning)"` for alert types.
 - Dialog, native to Chrome, but as a Polyfill for other browsers, instructional links are in the example file.
 - Tooltips `data-tooltip="[top|right|bottom|left]"`
 
 ## CHANGELOG:
+#### v0.6
+- Adjust some features to use Classes to be more close to other libraries such as Bootstrap.
+- Edit documentation.
+- Fix Menu Dropdown z-index and white-space.
+
 #### v0.5
 - Add Tooltips
 - Start adding code snippets to example file

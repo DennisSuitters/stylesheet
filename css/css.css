@@ -1,0 +1,113 @@
+.notelements {
+  position: relative;
+  background-color: rgba(255, 255, 0, .1);
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.notelements.intro {
+  padding-top:5rem;
+  height: 100vh;
+  background:url(../img/intro.png) no-repeat;
+  background-size: cover;
+}
+.notelements.intro h1 {
+  margin-bottom:3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.notelements.intro p{
+  text-align: center;
+}
+.notelements.intro ul{
+  display: block;
+}
+.notelements.intro ul li{
+  display: inline-grid;
+  width: 32%;
+  list-style: none;
+  font-size: .9rem;
+}
+.notelements a.top {
+  float: right;
+}
+.notelements p {
+  margin:1rem 0;
+  font-size: inherit;
+}
+.notelements a {
+  color: #00f;
+  text-decoration: none;
+}
+.notelements a:hover {
+  text-decoration: underline;
+}
+
+.notelements code {
+  font-size: 1rem;
+  word-wrap: break-word;
+  padding: 0 .5rem !important;
+  background-color: #f8f9fa;
+  border: 1px solid #e9e9e9;
+}
+
+.notelements figure.highlight {
+  position: relative;
+  display: block;
+  width: 80%;
+  margin: 2rem auto!important;
+  background-color: #f8f9fa;
+  border: 1px solid #e9e9e9;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.notelements figure.highlight:before {
+  content: "CODE:";
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 5px;
+  padding: .15em 1em;
+  font-size: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9e9e9;
+  box-shadow: 2px 2px 10px #f4f4f4;
+}
+.notelements figure.highlight pre code {
+  font-size: 1rem;
+  color: inherit;
+  word-break: normal;
+  text-align: left !important;
+  padding: 0 !important;
+  border: 0 none;
+  border-radius: 0;
+}
+.notelements figure.highlight code {
+  margin: 10px 20px;
+}
+.notelements figure.highlight code,
+.notelements figure.highlight kbd,
+.notelements figure.highlight pre,
+.notelements figure.highlight samp {
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 1em;
+}
+.notelements code .e {
+  color: #2f6f9f;
+}
+.notelements code .a {
+  color: #4f9fcf;
+}
+.notelements code .av {
+  color: #d44950;
+}
+
+.notelements code .csse {
+  color: #f00;
+}
+.notelements code .cssa {
+  color: #44f;
+}
+.notelements code .cssv {
+  color: #282;
+}
