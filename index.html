@@ -7,7 +7,7 @@
     <meta name="description" content="the Minimal HTML5 mostly classless Stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="./img/favicon.png" type="image/png">
-    <title>{stylesheet}v0.6 - the Minimal HTML5 mostly classless Stylesheet</title>
+    <title>{stylesheet}v0.7 - the Minimal HTML5 mostly classless Stylesheet</title>
     <script src="./script/dialog-polyfill.js"></script>
   </head>
   <body id="top">
@@ -22,11 +22,6 @@
         it is <a href="https://github.com/DiemenDesign/stylesheet/blob/master/LICENSE">MIT Licensed</a> and you are free to fork, modify, contribute, or abuse it to your hearts content.
       </p>
       <p>
-        <iframe src="https://ghbtns.com/github-btn.html?user=DiemenDesign&repo=stylesheet&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="Star {stylesheet} on GitHub"></iframe>
-        <iframe src="https://ghbtns.com/github-btn.html?user=DiemenDesign&repo=stylesheet&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170" height="30" title="Watch {stylesheet} on GitHub"></iframe>
-        <iframe src="https://ghbtns.com/github-btn.html?user=DiemenDesign&repo=stylesheet&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="Fork {stylesheet} on GitHub"></iframe>
-      </p>
-      <p>
         <ul>
           <li><a href="#typography">Typography</a></li>
           <li><a href="#address">Address and Logo Area</a></li>
@@ -35,6 +30,8 @@
           <li><a href="#covertron">Covertron</a></li>
           <li><a href="#jumbotron">Jumbotron</a></li>
           <li><a href="#slidertron">Slidertron</a></li>
+          <li><a href="#avatars">Avatars</a></li>
+          <li><a href="#badges">Badges</a></li>
           <li><a href="#cards">Cards</a></li>
           <li><a href="#tables">Tables</a></li>
           <li><a href="#tabs">Tabs</a></li>
@@ -42,6 +39,10 @@
           <li><a href="#tooltips">Tooltips</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#dialogs">Dialogs</a></li>
+          <li><a href="#viewer360">360 Viewer</a></li>
+          <Li><a href="#comparisonslider">Comparison Slider</a></li>
+          <li><a href="#footer">Page Footer</a></li>
+          <li><a href="#helpers">Helper Classes</a></li>
         </ul>
       </p>
     </div>
@@ -150,6 +151,33 @@
   <span class="cssa">--width-card-wide:</span> <span class="cssv">800px</span>;
   <span class="cssa">--width-content:</span> <span class="cssv">100%</span>;
 }
+
+<span class="comment">/*  Extra small devices (portrait phones, less than 576px)
+    No media query for `xs` since this is the default.
+    Obviously you can set custom breakpoints, these are here to
+    help faciliate ease of use.
+*/
+
+/* Small devices (landscape phones, 576px and up) */</span>
+<span class="csse">@media (</span><span class="cssa">min-width:</span> <span class="cssv">576px</span><span class="csse">)</span> {
+
+}
+
+<span class="comment">/* Medium devices (tablets, 768px and up) */</span>
+<span class="csse">@media (</span><span class="cssa">min-width:</span> <span class="cssv">768px</span><span class="csse">)</span> {
+
+}
+
+<span class="comment">/* Large devices (desktops, 992px and up) */</span>
+<span class="csse">@media (</span><span class="cssa">min-width:</span> <span class="cssv">992px</span><span class="csse">)</span> {
+
+}
+
+<span class="comment">/* Extra large devices (large desktops, 1200px and up) */</span>
+<span class="csse">@media (</span><span class="cssa">min-width:</span> <span class="cssv">1200px</span><span class="csse">)</span> {
+
+}
+
 </code>
 </pre>
       </figure>
@@ -232,6 +260,49 @@
       </figure>
       <a class="top" href="#top">Top</a>
       <hr>
+      <h3>Semantic Text Elements</h3>
+      <p>
+<abbr title="Internationalization">I18N</abbr>&nbsp;&nbsp;
+  <code><span class="e">&lt;abbr</span> <span class="a">title=</span><span class="av">"Internationalization"</span><span class="e">&gt;</span>I18N<span class="e">&lt;/abbr&gt;</span></code><br>
+<acronym title="World Wide Web">WWW</acronym>&nbsp;&nbsp;
+  <code><span class="e">&lt;acronym</span> <span class="a">title=</span><span class="av">"World Wide Web"</span><span class="e">&gt;</span>WWW<span class="e">&lt;/acronym&gt;</span></code><br>
+<strong>Bold</strong>&nbsp;&nbsp;
+  <code><span class="e">&lt;strong&gt;</span>Bold<span class="e">&lt;/strong&gt;</span></code>&nbsp;&nbsp;<code><span class="e">&lt;b&gt;</span>Bold<span class="e">&lt;/b&gt;</span></code><br>
+<cite>Citation</cite>&nbsp;&nbsp;
+  <code><span class="e">&lt;cite&gt;</span>Citation<span class="e">&lt;/cite&gt;</span></code><br>
+<del>Deleted</del>&nbsp;&nbsp;
+  <code><span class="e">&lt;del&gt;</span>Deleted<span class="e">&lt;/del&gt;</span></code><br>
+<em>Emphasis</em>&nbsp;&nbsp;
+  <code><span class="e">&lt;em&gt;</span>Emphasis<span class="e">&lt;/em&gt;</span></code><br>
+<i>Italic</i>&nbsp;&nbsp;
+  <code><span class="e">&lt;i&gt;</span>Italic<span class="e">&lt;/i&gt;</span></code><br>
+<ins>Inserted</ins>&nbsp;&nbsp;
+  <code><span class="e">&lt;ins&gt;</span>Inserted<span class="e">&lt;/ins&gt;</span></code><br>
+<kbd>Ctrl + S</kbd>&nbsp;&nbsp;
+  <code><span class="e">&lt;kbd&gt;</span>Ctrl + S<span class="e">&lt;/kbd&gt;</span></code><br>
+<mark>Highlighted</mark>&nbsp;&nbsp;
+  <code><span class="e">&lt;mark&gt;</span>Highlighted<span class="e">&lt;/mark&gt;</span></code><br>
+<q cite="https://link.com/">A short quotation.</q>&nbsp;&nbsp;
+  <code><span class="e">&lt;q</span> <span class="a">cite=</span><span class="av">"https://link.com/"</span><span class="e">&gt;</span>A short quotation.<span class="e">&lt;/q&gt;</span></code><br>
+<small>Small Text</small>&nbsp;&nbsp;
+  <code><span class="e">&lt;small&gt;</span>Small Text<span class="e">&lt;/small&gt;</span></code><br>
+<s>Strikethrough</s>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;s&gt;</span>Strikethrough<span class="e">&lt;/s&gt;</span></code><br>
+<samp>Sample</samp>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;samp&gt;</span>Sample<span class="e">&lt;/samp&gt;</span></code><br>
+Text <sub>Subscripted</sub>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;sub&gt;</span>Subscripted<span class="e">&lt;sub&gt;</span></code><br>
+Text <sup>Superscripted</sup>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;sup&gt;</span>Superscripted<span class="e">&lt;/sup&gt;</span></code><br>
+<time>20:00</time>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;time&gt;</span>20:00<span class="e">&lt;/time&gt;</span></code><br>
+<u>Underline</u>&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;u&gt;</span>Underline<span class="e">&lt;/u&gt;</span></code><br>
+<var>x</var> = <var>y</var> + 2&nbsp;&nbsp;
+  <code class="ml-2"><span class="e">&lt;var&gt;</span>x<span class="e">&lt;/var&gt;</span> = <span class="e">&lt;var&gt;</span>y<span class="e">&lt;/var&gt;</span> + 2</code>
+      </p>
+      <a class="top" href="#top">Top</a>
+      <hr>
       <h3>Blockquote</h3>
       <p>
 
@@ -240,7 +311,7 @@
     <main>
       <blockquote>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <cite title="Source Title">Someone famous in Source Title</cite>
       </blockquote>
     </main>
     <div class="notelements">
@@ -249,7 +320,7 @@
 <code>
 <span class="e">&lt;blockquote&gt;</span>
   <span class="e">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="e">&lt;/p&gt;</span>
-  <span class="e">&lt;footer&gt;</span>Someone famous in <span class="e">&lt;cite</span> <span class="a">title=</span><span class="av">"Source Title"</span><span class="e">&gt;</span>Source Title<span class="e">&lt;/cite&gt;&lt;/footer&gt;</span>
+  <span class="e">&lt;cite</span> <span class="a">title=</span><span class="av">"Source Title"</span>Someone famous in Source Title<span class="e">&lt;/cite&gt;</span>
 <span class="e">&lt;/blockquote&gt;</span>
 </code>
 </pre>
@@ -583,15 +654,15 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <hr>
       <h2 id="covertron">Covertron</h2>
       <p>
-        A Covertron uses <code>data-content="covertron"</code> on a <code>&lt;section/&gt;</code> using <code>style="background-image:url(image.jpg);"</code> to display an image.
+        A Covertron uses <code>class="covertron"</code> on a <code>&lt;section/&gt;</code> using <code>style="background-image:url(image.jpg);"</code> to display an image.
       </p>
     </div>
-    <section data-content="covertron" style="background-image:url(./img/cradle-in-autumn.jpg);"></section>
+    <section class="covertron" style="background-image:url(./img/cradle-in-autumn.jpg);"></section>
     <div class="notelements">
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;section</span> <span class="a">data-content=</span><span class="av">"covertron"</span> <span class="a">style=</span><span class="av">"background-image:url(images.jpg);"</span><span class="e">&gt;&lt;/section&gt;</span>
+<span class="e">&lt;section</span> <span class="a">class=</span><span class="av">"covertron"</span> <span class="a">style=</span><span class="av">"background-image:url(images.jpg);"</span><span class="e">&gt;&lt;/section&gt;</span>
 </code>
 </pre>
       </figure>
@@ -599,10 +670,10 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <hr>
       <h2 id="jumbotron">Jumbotron</h2>
       <p>
-        Jumbotrons use a <code>&lt;section/&gt;</code> element with <code>data-content="jumbotron"</code> data attribute.
+        Jumbotrons use a <code>&lt;section/&gt;</code> element with <code>class="jumbotron"</code> data attribute.
       </p>
     </div>
-    <section data-content="jumbotron">
+    <section class="jumbotron">
       <header>
         <h1>Jumbotron</h1>
       </header>
@@ -615,7 +686,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;section</span> <span class="a">data-content=</span><span class="av">"jumbotron"</span><span class="e">&gt;</span>
+<span class="e">&lt;section</span> <span class="a">class=</span><span class="av">"jumbotron"</span><span class="e">&gt;</span>
   <span class="e">&lt;header&gt;</span>
     <span class="e">&lt;h1&gt;</span>Jumbotron<span class="e">&lt;/h1&gt;</span>
   <span class="e">&lt;/header&gt;</span>
@@ -634,7 +705,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
 
       </p>
     </div>
-    <section data-content="slidertron">
+    <section class="slidertron">
       <input checked id="slide1" name="slides" type="radio">
       <input id="slide2" name="slides" type="radio">
       <div class="slider-arrow-nav">
@@ -666,7 +737,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;section</span> <span class="a">data-content=</span><span class="av">"slidertron"</span><span class="e">&gt;</span>
+<span class="e">&lt;section</span> <span class="a">cLass=</span><span class="av">"slidertron"</span><span class="e">&gt;</span>
   <span class="e">&lt;input</span> <span class="a">checked id=</span><span class="av">"slide1"</span> <span class="a">name=</span><span class="av">"slides"</span> <span class="a">type=</span><span class="av">"radio"</span><span class="e">&gt;</span>
   <span class="e">&lt;input</span> <span class="a">id=</span><span class="av">"slide2"</span> <span class="a">name=</span><span class="av">"slides"</span> <span class="a">type=</span><span class="av">"radio"</span><span class="e">&gt;</span>
   <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-arrow-nav"</span><span class="e">&gt;</span>
@@ -698,6 +769,99 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
 </pre>
       </figure>
       <a class="top" href="#top">Top</a>
+      <hr>
+      <h2 id="avatars">Avatars</h2>
+      <p>
+
+      </p>
+    </div>
+    <main>
+      <figure class="avatar extra-large">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+      <figure class="avatar large">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+      <figure class="avatar">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+      <figure class="avatar small">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+      <figure class="avatar extra-small">
+        <img src="img/avatar-1.png" alt="...">
+      </figure>
+    </main>
+    <div class="notelements">
+      <figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar extra-large"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar large"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar small"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar extra-small"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+</code>
+</pre>
+      </figure>
+      <hr>
+      <h2 id="badge">Badges</h2>
+      <p>
+        Badges are often used as unread number indicators.<br>
+        Add the <code><span class="av">badge</span></code> class to non self closing elements. And add the <code><span class="a">data-badge</span></code> attribute to define the content of a badge. The badge will appear in the top-right direction of the element.<br>
+        <br>
+        If there is no <code><span class="a">data-badge</span></code> or the attribute is not specified, the badge will appear as a dot.
+      </p>
+    </div>
+    <main>
+      <span class="badge">
+        Notifications
+      </span>
+
+      <span class="badge" data-badge="8">
+        Notifications
+      </span>
+
+      <button class="badge" data-badge="8">
+        Button
+      </button>
+
+      <figure class="avatar large badge" data-badge="8">
+        <img src="img/avatar-1.png" alt="YZ">
+      </figure>
+    </main>
+    <div class="notelements">
+      <figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"badge"</span><span class="e">&gt;</span>
+  Notifications
+<span class="e">&lt;/span&gt;</span>
+
+<span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
+  Notifications
+<span class="e">&lt;/span&gt;</span>
+
+<span class="e">&lt;button</span> <span class="a">class=</span><span class="av">"badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
+  Button
+<span class="e">&lt;/button&gt;</span>
+
+<span class="e">&lt;figure <span class="a">class=</span><span class="av">"avatar large badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
+  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+<span class="e">&lt;/figure&gt;</span>
+</code>
+</pre>
+      </figure>
       <hr>
       <h2 id="cards">Cards</h2>
       <p>
@@ -769,30 +933,30 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
     </div>
     <main>
       <section>
-        <section data-content="content-items">
+        <section class="content-items">
           <header>
             <h2>Section Heading</h2>
             <p>Section Subheading</p>
             <p>data'd cards</p>
           </header>
-          <article data-content="card">
+          <article class="card">
             <img src="./img/noimage.png" alt="Sample">
             <h3>Card heading</h3>
             <p>Card content*</p>
             <p><small>*with small content</small></p>
           </article>
-          <article data-content="card">
+          <article class="card">
             <img src="./img/noimage.png" alt="Sample">
             <h3>Card heading</h3>
             <p>Card content <sup>with notification</sup></p>
           </article>
-          <article data-content="card">
+          <article class="card">
             <img src="./img/noimage.png" alt="Sample">
             <h3>Card heading</h3>
             <p>Card content</p>
           </article>
         </section>
-        <aside data-content="sidemenu">
+        <aside class="sidemenu">
           Aside Contents
         </aside>
       </section>
@@ -802,30 +966,30 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
 <pre>
 <code>
 <span class="e">&lt;section&gt;</span>
-  <span class="e">&lt;section</span> <span class="a">data-content=</span><span class="av">"content-items"</span><span class="e">&gt;</span>
+  <span class="e">&lt;section</span> <span class="a">class=</span><span class="av">"content-items"</span><span class="e">&gt;</span>
     <span class="e">&lt;header&gt;</span>
       <span class="e">&lt;h2&gt;</span>Section Heading<span class="e">&lt;/h2&gt;</span>
       <span class="e">&lt;p&gt;</span>Section Subheading<span class="e">&lt;/p&gt;</span>
       <span class="e">&lt;p&gt;</span>data'd cards<span class="e">&lt;/p&gt;</span>
     <span class="e">&lt;/header&gt;</span>
-    <span class="e">&lt;article</span> <span class="a">data-content=</span><span class="av">"card"</span><span class="e">&gt;</span>
+    <span class="e">&lt;article</span> <span class="a">class=</span><span class="av">"card"</span><span class="e">&gt;</span>
       <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"Sample"</span><span class="e">&gt;</span>
       <span class="e">&lt;h3&gt;</span>Card heading<span class="e">&lt;/h3&gt;</span>
       <span class="e">&lt;p&gt;</span>Card content*<span class="e">&lt;/p&gt;</span>
       <span class="e">&lt;p&gt;&lt;small&gt;</span>*with small content<span class="e">&lt;/small&gt;&lt;/p&gt;</span>
     <span class="e">&lt;/article&gt;</span>
-    <span class="e">&lt;article</span> <span class="a">data-content=</span><span class="av">"card"</span><span class="e">&gt;</span>
+    <span class="e">&lt;article</span> <span class="a">class=</span><span class="av">"card"</span><span class="e">&gt;</span>
       <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"Sample"</span><span class="e">&gt;</span>
       <span class="e">&lt;h3&gt;</span>Card heading<span class="e">&lt;/h3&gt;</span>
       <span class="e">&lt;p&gt;</span>Card content <span class="e">&lt;sup&gt;</span>with notification<span class="e">&lt;/sup&gt;&lt;/p&gt;</span>
     <span class="e">&lt;/article&gt;</span>
-    <span class="e">&lt;article</span> <span class="a">data-content=</span><span class="av">"card"</span><span class="e">&gt;</span>
+    <span class="e">&lt;article</span> <span class="a">class=</span><span class="av">"card"</span><span class="e">&gt;</span>
       <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"Sample"</span><span class="e">&gt;</span>
       <span class="e">&lt;h3></span>Card heading<span class="e">&lt;/h3&gt;</span>
       <span class="e">&lt;p></span>Card content<span class="e">&lt;/p&gt;</span>
     <span class="e">&lt;/article&gt;</span>
   <span class="e">&lt;/section&gt;</span>
-  <span class="e">&lt;aside</span> <span class="a">data-content=</span><span class="av">"sidemenu"</span><span class="e">&gt;</span>
+  <span class="e">&lt;aside</span> <span class="a">class=</span><span class="av">"sidemenu"</span><span class="e">&gt;</span>
     Aside Contents
   <span class="e">&lt;/aside&gt;</span>
 <span class="e">&lt;/section&gt;</span>
@@ -841,26 +1005,31 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
     </div>
     <main>
       <section>
-        <nav class="tabs">
-          <ul>
-            <li class="tab-item active"><a class="tab-link" href="#tab1">Tab 1</a></li>
-            <li class="tab-item"><a class="tab-link" href="#tab2">Tab 2</a></li>
-            <li class="tab-item"><a class="tab-link" href="#tab3">Tab 3</a></li>
-            <li class="tab-item"><a class="tab-link" href="#tab4">Tab 4</a></li>
-          </ul>
-        </nav>
-        <div class="tabs-content">
-          <div class="tab-pane" id="tab2">
+        <div class="tabs">
+          <input type="radio" name="tabs" id="tab1" checked />
+          <label for="tab1">Tab 1</label>
+          <input type="radio" name="tabs" id="tab2" />
+          <label for="tab2">Tab 2</label>
+          <input type="radio" name="tabs" id="tab3" />
+          <label for="tab3">Tab 3</label>
+          <input type="radio" name="tabs" id="tab4" />
+          <label for="tab4">Tab 4</label>
+          <input type="radio" name="tabs" id="tab5" />
+          <label for="tab5">Tab 5</label>
+          <div class="tab content1">
+            Tab 1 content
+          </div>
+          <div class="tab content2">
             Tab 2 content
           </div>
-          <div class="tab-pane" id="tab3">
+          <div class="tab content3">
             Tab 3 content
           </div>
-          <div class="tab-pane" id="tab4">
+          <div class="tab content4">
             Tab 4 content
           </div>
-          <div class="tab-pane" id="tab1">
-            Tab 1 content
+          <div class="tab content5">
+            Tab 5 content
           </div>
         </div>
       </section>
@@ -869,26 +1038,31 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;nav</span> <span class="a">class=</span><span class="av">"tabs"</span><span class="e">&gt;</span>
-  <span class="e">&lt;ul&gt;</span>
-    <span class="e">&lt;li</span> <span class="a">class=</span><span class="av">"tab-item active"</span><span class="e">&gt;&lt;a</span> <span class="a">class=</span><span class="av">"tab-link"</span> <span class="a">href=</span><span class="av">"#tab1"</span><span class="e">&gt;</span>Tab 1<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="e">&lt;li</span> <span class="a">class=</span><span class="av">"tab-item active"</span><span class="e">&gt;&lt;a</span> <span class="a">class=</span><span class="av">"tab-link"</span> <span class="a">href=</span><span class="av">"#tab2"</span><span class="e">&gt;</span>Tab 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="e">&lt;li</span> <span class="a">class=</span><span class="av">"tab-item active"</span><span class="e">&gt;&lt;a</span> <span class="a">class=</span><span class="av">"tab-link"</span> <span class="a">href=</span><span class="av">"#tab3"</span><span class="e">&gt;</span>Tab 3<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="e">&lt;li</span> <span class="a">class=</span><span class="av">"tab-item active"</span><span class="e">&gt;&lt;a</span> <span class="a">class=</span><span class="av">"tab-link"</span> <span class="a">href=</span><span class="av">"#tab4"</span><span class="e">&gt;</span>Tab 4<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="e">&lt;/ul&gt;</span>
-<span class="e">&lt;/nav&gt;</span>
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tabs-content"</span><span class="e">&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab-pane"</span> <span class="a">id=</span><span class="av">"tab2"</span><span class="e">&gt;</span>
+<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tabs"</span><span class="e">&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab1"</span> <span class="a">checked</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab1"</span><span class="e">&gt;</span>Tab 1<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab2"</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab2"</span><span class="e">&gt;</span>Tab 2<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab3"</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab3"</span><span class="e">&gt;</span>Tab 3<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab4"</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab4"</span><span class="e">&gt;</span>Tab 4<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab5"</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab5"</span><span class="e">&gt;</span>Tab 5<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content1"</span><span class="e">&gt;</span>
+    Tab 1 content
+  <span class="e">&lt;/div&gt;</span>
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content2"</span><span class="e">&gt;</span>
     Tab 2 content
   <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab-pane"</span> <span class="a">id=</span><span class="av">"tab3"</span><span class="e">&gt;</span>
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content3"</span><span class="e">&gt;</span>
     Tab 3 content
   <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab-pane"</span> <span class="a">id=</span><span class="av">"tab4"</span><span class="e">&gt;</span>
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content4"</span><span class="e">&gt;</span>
     Tab 4 content
   <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab-pane"</span> <span class="a">id=</span><span class="av">"tab1"</span><span class="e">&gt;</span>
-    Tab 1 content
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content5"</span><span class="e">&gt;</span>
+    Tab 5 content
   <span class="e">&lt;/div&gt;</span>
 <span class="e">&lt;/div&gt;</span>
 </code>
@@ -1118,12 +1292,12 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       </figure>
       <a class="top" href="#top">Top</a>
       <hr>
-      <h2 id="footer">Footer</h2>
+      <h2 id="footer">Footer (Page Footer)</h2>
       <p>
-
+        The page footer for using at the bottom of most of a websites page layout uses <code>class="pagefooter"</code>.
       </p>
     </div>
-    <footer data-content="footer">
+    <footer class="pagefooter">
       <aside>
         Address Information
       </aside>
@@ -1141,7 +1315,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;footer</span> <span class="a">data-content=</span><span class="av">"footer"</span><span class="e">&gt;</span>
+<span class="e">&lt;footer</span> <span class="a">class=</span><span class="av">"pagefooter"</span><span class="e">&gt;</span>
   <span class="e">&lt;aside&gt;</span>
     Address Information
   <span class="e">&lt;/aside&gt;</span>
@@ -1155,6 +1329,124 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
     Address Information
   <span class="e">&lt;/aside&gt;</span>
 <span class="e">&lt;/footer&gt;</span>
+</code>
+</pre>
+      </figure>
+      <a class="top" href="#top">Top</a>
+      <hr>
+      <h2 id="viewer360">360 Viewer</h2>
+      <p>
+        360-Degree Viewer is an interactive product photo viewer. It is built in pure CSS.<br>
+        <br>
+        You will need to use your own product image sprite (all angle of photos in one image) and set the attribute <code><span class="a">max</span></code> to the image numbers to use this component.<br>
+        <br>
+        The default image numbers in CSS are <code><span class="av">36</span></code>. You can edit the stylesheet and add more numbers.
+      </p>
+    </div>
+    <main>
+      <div class="viewer-360">
+        <input class="viewer-slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
+        <figure class="viewer-image" style="background-image:url('img/laptop.jpg');"></figure>
+      </div>
+    </main>
+    <div class="notelements">
+      <figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;div <span class="a">class=</span><span class="av">"viewer-360"</span><span class="e">&gt;</span>
+  <span class="e">&lt;input <span class="a">class=</span><span class="av">"viewer-slider"</span> <span class="a">type=</span><span class="av">"range"</span> <span class="a">min=</span><span class="av">"1"</span> <span class="a">max=</span><span class="av">"36"</span> <span class="a">value=</span><span class="av">"1"</span> <span class="a">oninput=</span><span class="av">"this.setAttribute('value', this.value);"</span><span class="e">&gt;</span>
+  <span class="e">&lt;figure <span class="a">class=</span><span class="av">"viewer-image"</span> <span class="a">style=</span><span class="av">"background-image:url('image.jpg');"</span><span class="e">&gt;&lt;/figure&gt;</span>
+<span class="e">&lt;/div&gt;</span>
+</code>
+</pre>
+      </figure>
+      <a class="top" href="#top">Top</a>
+      <hr>
+      <h2 id="comparisonslider">Comparison Slider</h2>
+      <p>
+
+      </p>
+    </div>
+    <main>
+      <div class="comparison">
+        <div class="comparison-slider">
+          <figure class="comparison-before"><img src="img/cradle-in-autumn-1.jpg" alt="macOS Sierra Wallpaper">
+            <div class="comparison-label">After</div>
+          </figure>
+          <figure class="comparison-after"><img src="img/cradle-in-autumn-2.jpg" alt="macOS Sierra Wallpaper">
+            <div class="comparison-label">Before</div>
+            <textarea class="comparison-resizer" readonly></textarea>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <div class="notelements">
+      <figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;div <span class="a">class=</span><span class="av">"comparison"</span><span class="e">&gt;</span>
+  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-slider"</span><span class="e">&gt;</span>
+    <span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"comparison-before"</span><span class="e">&gt;&lt;img</span> <span class="a">src=</span><span class="av">"image-1.jpg"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-label"</span><span class="e">&gt;</span>After<span class="e">&lt;/div&gt</span>
+    <span class="e">&lt;/figure&gt;</span>
+    <span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"comparison-after"</span><span class="e">&gt;&lt;img</span> <span class="a">src=</span><span class="av">"image-2.jpg"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
+      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-label"</span><span class="e">&gt;</span>Before<span class="e">&lt;/div&gt</span>
+      <span class="e">&lt;textarea</span> <span class="a">class=</span><span class="av">"comparison-resizer"</span> <span class="a">readonly<?span><span class="e">&gt;&lt/textarea&gt;</span>
+    <span class="e">&lt;/figure&gt;</span>
+  <span class="e">&lt;/div&gt;</span>
+<span class="e">&lt;/div&gt;</span>
+</code>
+</pre>
+      </figure>
+      <a class="top" href="#top">Top</a>
+      <h2 id="helpers">Helpers</h2>
+      <p>
+        These Classes are available as extras for various User Interface utilities. We've tried to add classes that are common to many frameworks to help facilitate ease of transition.
+      </p>
+      <figure class="highlight">
+<pre>
+<code>
+<span class="comment">/* Display Classes */</span>
+<span class="csse">.hide,</span>    <span class="comment">/* Bootstrap 2, 3 */</span>
+<span class="csse">.hidden,</span>  <span class="comment">/* Bootstrap 3 */</span>
+<span class="csse">.d-hide,</span>  <span class="comment">/* Spectre */</span>
+<span class="csse">.d-none,</span>  <span class="comment">/* Bootstrap 4, Spectre */</span>
+<span class="csse">.is-invisible,</span> <span class="comment">/* Foundatio 6 */</span>
+<span class="csse">[hidden] {</span> <span class="comment">/* Foundation 6 */</span>
+  <span class="cssa">display:</span> <span class="cssv">none;</span> <span class="csse">}</span>
+
+<span class="csse">.d-visible {</span> <span class="comment">/* Spectre */</span>
+  <span class="cssa">visibility:</span> <span class="cssv">visible;</span> <span class="csse">}</span>
+
+<span class="csse">.d-invisible,</span> <span class="comment">/* Spectre */</span>
+<span class="csse">.invisible {</span> <span class="comment">/* Bootstrap 2, 3 */</span>
+  <span class="cssa">visibility:</span> <span class="cssv">hidden;</span> <span class="csse">}</span>
+
+<span class="csse">.d-inline {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">inline;</span> <span class="csse">}</span>
+
+<span class="csse">.d-inline-block {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">inline-block;</span> <span class="csse">}</span>
+
+<span class="csse">.is-visible,</span> <span class="comment">/* Foundation 6 */</span>
+<span class="csse">.show,</span> <span class="comment">/* Bootstrap 2 */</span>
+<span class="csse">.d-block {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">block;</span> <span class="csse">}</span>
+
+<span class="csse">.d-table {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">table;</span> <span class="csse">}</span>
+
+<span class="csse">.d-table-row {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">table-row;</span> <span class="csse">}</span>
+
+<span class="csse">.d-table-cell {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">table-cell;</span> <span class="csse">}</span>
+
+<span class="csse">.d-flex {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">flex;</span> <span class="csse">}</span>
+
+<span class="csse">.d-inline-flex {</span> <span class="comment">/* Bootstrap 4 */</span>
+  <span class="cssa">display:</span> <span class="cssv">inline-flex;</span> <span class="csse">}</span>
 </code>
 </pre>
       </figure>
@@ -1176,5 +1468,70 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       var dialog = document.querySelector('dialog');
       dialogPolyfill.registerDialog(dialog);
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('button[data-viewport-width]').on('click', function(e) {
+          if($(this).attr('data-viewport-width') == '100%') {
+            newWidth = '100%';
+          }else{
+            newWidth = $(this).attr('data-viewport-width');
+          }
+          if($(this).attr('data-viewport-height') == '100%') {
+            newHeight = '100%';
+          }else{
+            newHeight = $(this).attr('data-viewport-height');
+          }
+          $('button[data-viewport-width]').removeClass('active');
+          $(this).addClass('active');
+          // $('#resizerFrame').stop().animate({'max-width': newWidth, 'max-height': newHeight}, 200);
+          $('#top').css({'max-width': newWidth, 'max-height': newHeight});
+          e.preventDefault();
+          return false;
+        });
+        $('button.rotate').on('click', function(e) {
+          $(this).toggleClass('landscape');
+          $('button[data-rotate=true]').each(function() {
+            $(this).toggleClass('landscape');
+            width = $(this).attr('data-viewport-width');
+            height = $(this).attr('data-viewport-height');
+            // shuffle values
+            $(this).attr('data-viewport-width', height);
+            $(this).attr('data-viewport-height', width);
+            if($(this).hasClass('active')) {
+              $(this).trigger('click');
+            }
+          });
+        });
+      });
+    </script>
+    <div id="resizer">
+      <ul>
+        <li>
+          <button title="Fullscreen" data-viewport-width="100%" data-viewport-height="100%"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 12.2,8 0,-5.2 q 0,-0.0812 -0.0594,-0.14063 -0.0594,-0.0594 -0.14062,-0.0594 l -10,0 q -0.08125,0 -0.140625,0.0594 Q 1.799975,2.71877 1.799975,2.8 l 0,5.2 q 0,0.0812 0.05938,0.14062 0.05938,0.0594 0.140625,0.0594 l 10,0 q 0.0812,0 0.14062,-0.0594 Q 12.2,8.08122 12.2,8 Z M 13,2.8 13,9.6 q 0,0.4125 -0.29375,0.70625 Q 12.4125,10.6 12,10.6 l -3.4,0 q 0,0.23125 0.1,0.48437 0.1,0.25313 0.2,0.44376 Q 9,11.71875 9,11.8 9,11.9625 8.88125,12.08125 8.7625,12.2 8.6,12.2 l -3.2,0 Q 5.2375,12.2 5.11875,12.08125 5,11.9625 5,11.8 5,11.7125 5.1,11.525 5.2,11.3375 5.3,11.0875 5.4,10.8375 5.4,10.6 L 2,10.6 Q 1.5875,10.6 1.29375,10.30625 1,10.0125 1,9.6 L 1,2.8 Q 1,2.3875 1.29375,2.09375 1.5875,1.8 2,1.8 l 10,0 q 0.4125,0 0.70625,0.29375 Q 13,2.3875 13,2.8 Z M 5.26254,7.74271 2.23551,4.71569 l 0,3.02702 z m 6.50886,-1.79254 0,-3.02703 -3.02703,0 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="Desktop" data-viewport-width="1920px" data-viewport-height="1080px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path style="fill-rule:evenodd" d="m 2.8,12.4 2.4,-1.2 3.6,0 2.4,1.2 0,0.6 -8.4,0 0,-0.6 z M 1,2.2000637 C 1,1.5372868 1.5389274,1 2.1944771,1 L 11.805523,1 C 12.465215,1 13,1.534035 13,2.2000637 L 13,9.999936 C 13,10.662713 12.461073,11.2 11.805523,11.2 l -9.6110459,0 C 1.5347856,11.2 1,10.665965 1,9.999936 L 1,2.2000637 Z M 2.2,2.2 l 9.6,0 0,6.6 -9.6,0 0,-6.6 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="13 &#39; MacBook Pro" data-viewport-width="1280px" data-viewport-height="800px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 11.8,10.6 0,-7.2035638 C 11.8,2.7367083 11.264337,2.2 10.603564,2.2 l -7.2071278,0 C 2.7367083,2.2 2.2,2.7356627 2.2,3.3964362 L 2.2,10.6 1,10.6 1,11.2 c 0,0.333681 0.2664272,0.6 0.5950819,0.6 l 10.8098361,0 C 12.726816,11.8 13,11.531371 13,11.2 l 0,-0.6 -1.2,0 z m -8.4,-7.2 7.2,0 0,5.4 -7.2,0 0,-5.4 z m 2.4,6.6 2.4,0 0,0.6 -2.4,0 0,-0.6 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="iPad" data-rotate="true" data-viewport-width="768px" data-viewport-height="1024px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 7.54546,11.909091 q 0,-0.221591 -0.16194,-0.383523 Q 7.22159,11.363637 7,11.363637 q -0.22159,0 -0.38352,0.161931 -0.16193,0.161932 -0.16193,0.383523 0,0.221591 0.16193,0.383523 0.16193,0.161932 0.38352,0.161932 0.22159,0 0.38352,-0.161932 0.16194,-0.161932 0.16194,-0.383523 z m 3.27272,-1.363637 V 2.363637 q 0,-0.110796 -0.081,-0.191762 -0.081,-0.08097 -0.19176,-0.08097 H 3.45451 q -0.1108,0 -0.19177,0.08097 -0.081,0.08097 -0.081,0.191762 v 8.181817 q 0,0.110796 0.081,0.191762 0.081,0.08097 0.19177,0.08097 h 7.09091 q 0.11079,0 0.19176,-0.08097 0.081,-0.08097 0.081,-0.191762 z m 1.09091,-8.181817 v 9.272726 q 0,0.562501 -0.40057,0.963069 Q 11.10796,13 10.54546,13 H 3.45455 Q 2.89205,13 2.49148,12.599432 2.09091,12.198864 2.09091,11.636363 V 2.363637 q 0,-0.562501 0.40057,-0.963069 Q 2.89205,1 3.45455,1 h 7.09091 q 0.5625,0 0.96306,0.400568 0.40057,0.400568 0.40057,0.963069 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="Android Tablet" data-rotate="true" data-viewport-width="720px" data-viewport-height="1280px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 7.54546,11.909091 q 0,-0.221591 -0.16194,-0.383523 Q 7.22159,11.363637 7,11.363637 q -0.22159,0 -0.38352,0.161931 -0.16193,0.161932 -0.16193,0.383523 0,0.221591 0.16193,0.383523 0.16193,0.161932 0.38352,0.161932 0.22159,0 0.38352,-0.161932 0.16194,-0.161932 0.16194,-0.383523 z m 3.27272,-1.363637 V 2.363637 q 0,-0.110796 -0.081,-0.191762 -0.081,-0.08097 -0.19176,-0.08097 H 3.45451 q -0.1108,0 -0.19177,0.08097 -0.081,0.08097 -0.081,0.191762 v 8.181817 q 0,0.110796 0.081,0.191762 0.081,0.08097 0.19177,0.08097 h 7.09091 q 0.11079,0 0.19176,-0.08097 0.081,-0.08097 0.081,-0.191762 z m 1.09091,-8.181817 v 9.272726 q 0,0.562501 -0.40057,0.963069 Q 11.10796,13 10.54546,13 H 3.45455 Q 2.89205,13 2.49148,12.599432 2.09091,12.198864 2.09091,11.636363 V 2.363637 q 0,-0.562501 0.40057,-0.963069 Q 2.89205,1 3.45455,1 h 7.09091 q 0.5625,0 0.96306,0.400568 0.40057,0.400568 0.40057,0.963069 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="Android Phone" data-rotate="true" data-viewport-width="480px" data-viewport-height="720px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M 10.10814,1 H 3.89144 C 3.63107,1 3.42002,1.210636 3.42002,1.471424 V 12.528993 C 3.42002,12.788528 3.63107,13 3.89144,13 h 6.2167 c 0.26037,0 0.47101,-0.211472 0.47101,-0.471007 V 1.471424 h 8.3e-4 C 10.57998,1.210636 10.36851,1 10.10814,1 z M 6.99708,12.503081 c -0.30635,0 -0.55501,-0.248249 -0.55501,-0.55459 0,-0.305507 0.24866,-0.553756 0.55501,-0.553756 0.30634,0 0.55459,0.248249 0.55459,0.553756 0,0.306341 -0.24825,0.55459 -0.55459,0.55459 z m 2.43861,-2.36088 H 4.56473 V 2.546756 h 4.87096 v 7.595445 z"/></svg></i></button>
+        </li>
+        <li>
+          <button title="iPhone" data-rotate="true" data-viewport-width="320px" data-viewport-height="640px"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M 10.10814,1 H 3.89144 C 3.63107,1 3.42002,1.210636 3.42002,1.471424 V 12.528993 C 3.42002,12.788528 3.63107,13 3.89144,13 h 6.2167 c 0.26037,0 0.47101,-0.211472 0.47101,-0.471007 V 1.471424 h 8.3e-4 C 10.57998,1.210636 10.36851,1 10.10814,1 z M 6.99708,12.503081 c -0.30635,0 -0.55501,-0.248249 -0.55501,-0.55459 0,-0.305507 0.24866,-0.553756 0.55501,-0.553756 0.30634,0 0.55459,0.248249 0.55459,0.553756 0,0.306341 -0.24825,0.55459 -0.55459,0.55459 z m 2.43861,-2.36088 H 4.56473 V 2.546756 h 4.87096 v 7.595445 z"/></svg></i></button>
+        </li>
+        <li>
+          <button class="rotate" title="Toggle Landscape/Portrait"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 12.80469,8.25 q 0,0.03906 -0.008,0.05469 -0.5,2.093751 -2.09376,3.394532 Q 9.10937,13 6.96875,13 5.82812,13 4.76172,12.570312 3.69531,12.140625 2.85938,11.34375 L 1.851562,12.351563 Q 1.703125,12.5 1.5,12.5 1.296875,12.5 1.148437,12.351563 1,12.203125 1,12 V 8.5 Q 1,8.296875 1.148437,8.148438 1.296875,8 1.5,8 H 5 Q 5.20312,8 5.35156,8.148438 5.5,8.296875 5.5,8.5 5.5,8.703125 5.35156,8.851562 L 4.28125,9.921875 Q 4.83594,10.4375 5.53906,10.71875 6.24219,11 7,11 8.04687,11 8.95313,10.492187 9.85937,9.984375 10.40625,9.09375 10.49215,8.960938 10.82031,8.179688 10.88281,8 11.05469,8 h 1.5 q 0.10156,0 0.17578,0.07422 0.0742,0.07422 0.0742,0.175781 z M 13,2 V 5.5 Q 13,5.703125 12.85156,5.851562 12.70313,6 12.5,6 H 9 Q 8.79687,6 8.64844,5.851562 8.5,5.703125 8.5,5.5 8.5,5.296875 8.64844,5.148438 L 9.72656,4.070312 Q 8.57031,3 7,3 5.95313,3 5.04688,3.507813 4.14063,4.015625 3.59375,4.90625 3.50785,5.039062 3.17969,5.820312 3.11719,6 2.94531,6 H 1.390625 Q 1.289062,6 1.214844,5.92578 1.140624,5.85156 1.140624,5.749999 V 5.695309 Q 1.648438,3.601562 3.25,2.300781 4.85156,1 7,1 8.14063,1 9.21875,1.433594 10.29687,1.867187 11.13281,2.65625 L 12.14844,1.648437 Q 12.29688,1.5 12.5,1.5 12.70313,1.5 12.85156,1.648437 13,1.796875 13,2 z"/></svg></i></button>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

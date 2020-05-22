@@ -1,4 +1,4 @@
-![stylesheet](img/stylesheet.png) v0.6
+![stylesheet](img/stylesheet.png) v0.7
 
 the Minimal HTML5 mostly classeless Stylesheet
 
@@ -17,11 +17,13 @@ Some things we take into account:
 Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add features (Note: No Javascript is used):
 - Mobile Collapse Navigation `role="menubar"`
 - Breadcrumbs `class="breadcrumb"`
-- Covertron `data-content="covertron"`
-- Jumbotron `data-content="jumbotron"`
-- Slidertron `data-content="slidertron"`
-- Tabs `data-content="tabs"`
+- Covertron `class="covertron"`
+- Jumbotron `class="jumbotron"`
+- Slidertron `class="slidertron"`
+- Tabs `class="tabs"`
 - Alerts `class="alert"` or `class="alert alert-(danger/success/warning)"` for alert types.
+- 360 Viewer `class="viewer360"`
+- Comparison Slide `class="comparison"`
 - Dialog, native to Chrome, but as a Polyfill for other browsers, instructional links are in the example file.
 - Tooltips `data-tooltip="[top|right|bottom|left]"`
 
