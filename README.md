@@ -1,6 +1,6 @@
-![stylesheet](img/stylesheet.png) v0.7
+##{stylesheet}
 
-the Minimal HTML5 mostly classeless Stylesheet
+the Minimal HTML5 mostly classeless Stylesheet v0.8
 
 No SASS, No LESS, just plain good 'ol CSS.
 
@@ -28,6 +28,16 @@ Extra's that use `role="[name]"`, `data-content="[name]"` or classes to add feat
 - Tooltips `data-tooltip="[top|right|bottom|left]"`
 
 ## CHANGELOG:
+#### v0.8
+- Tidy up example markup.
+- Add Dark Mode styling and toggle option.
+- Fix Checkbox and Radio button sizing.
+- Fix Responsive Navigation Menu so it works better.
+- Add Form Required, Valid, and Invalid styling.
+
+#### v0.7
+- Add more widgets, 360 Viewer, Comparison Slider, Add to documentation.
+
 #### v0.6
 - Adjust some features to use Classes to be more close to other libraries such as Bootstrap.
 - Edit documentation.

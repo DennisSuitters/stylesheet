@@ -7,13 +7,13 @@
     <meta name="description" content="the Minimal HTML5 mostly classless Stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="./img/favicon.png" type="image/png">
-    <title>{stylesheet}v0.7 - the Minimal HTML5 mostly classless Stylesheet</title>
+    <title>{stylesheet}v0.8 - the Minimal HTML5 mostly classless Stylesheet</title>
     <script src="./script/dialog-polyfill.js"></script>
   </head>
   <body id="top">
     <div class="notelements intro">
       <h1>
-        <img alt="Logo" src="./img/stylesheet.png" alt="{stylesheet}"><br>
+        <span class="logo">{stylesheet}</span><br>
         a minimilist mostly<br>
         classeless stylesheet.
       </h1>
@@ -49,7 +49,7 @@
     <div class="notelements">
       <p>
         This page is to show the styling of the elements, and their markup.<br>
-        Area's like this yellow area are documentation area's.
+        Area's with this background colour area are documentation area's.
       </p>
       <p>
         Colours, Borders, and some elements widths can be controlled by the <code>:root</code> styling directive at the top of the stylesheet, so if you only want to change the colours you only need to edit this area. Elements have been designed to be as responsive as possible, and without using <code>@media</code> breakpoints unless absolutely necessary. Typography is an exception to our breakpoint rule so text elements are easily readable on different devices.
@@ -60,27 +60,35 @@
       <figure class="highlight">
 <pre>
 <code>
-<span class="csse">:root</span> {
+<span class="cssa">:root</span> {
   <span class="cssa">--font:</span> <span class="cssv">-apple-system</span>, <span class="cssv">BlinkMacSystemFont</span>, <span class="cssv">"Segoe UI"</span>, <span class="cssv">Roboto</span>, <span class="cssv">"Helvetica Neue"</span>, <span class="cssv">Arial</span>, <span class="cssv">"Noto Sans"</span>, <span class="cssv">sans-serif</span>, <span class="cssv">"Apple Color Emoji"</span>, <span class="cssv">"Segoe UI Emoji"</span>, <span class="cssv">"Segoe UI Symbol"</span>, <span class="cssv">"Noto Color Emoji"</span>;
   <span class="cssa">--font-family-monospace:</span> <span class="cssv">SFMono-Regular</span>, <span class="cssv">Menlo</span>, <span class="cssv">Monaco</span>, <span class="cssv">Consolas</span>, <span class="cssv">"Liberation Mono"</span>, <span class="cssv">"Courier New"</span>, <span class="cssv">monospace</span>;
   <span class="cssa">--body-background-color:</span> <span class="cssv">#fff</span>;
   <span class="cssa">--color:</span> <span class="cssv">#000</span>;
   <span class="cssa">--color-muted:</span> <span class="cssv">#6c757d</span>;
-  <span class="cssa">--link-color:</span> <span class="cssv">#007bff</span>;
+  <span class="cssa">--link-color:</span> <span class="cssv">#0044ff</span>;
   <span class="cssa">--link-color-hover:</span> <span class="cssv">#0056b3</span>;
   <span class="cssa">--content-background-color:</span> <span class="cssv">#920de90b</span>;
   <span class="cssa">--content-border-color:</span> <span class="cssv">#007bff</span>;
   <span class="cssa">--box-shadow-color:</span> <span class="cssv">#f4f4f4</span>;
-  <span class="cssa">--border-radius-sm:</span> <span class="cssv">.125rem</span>;
   <span class="cssa">--border-radius:</span> <span class="cssv">.25rem</span>;
-  <span class="cssa">--border-radius-md:</span> <span class="cssv">.375rem</span>;
-  <span class="cssa">--border-radius-lg:</span> <span class="cssv">.5rem</span>;
   <span class="cssa">--border-color:</span> <span class="cssv">#e9e9e9</span>;
   <span class="cssa">--border-width:</span> <span class="cssv">1px</span>;
   <span class="cssa">--mark-background-color:</span> <span class="cssv">#ff0</span>;
 
+  <span class="cssa">--menu-background-color:</span> <span class="cssv">#fff</span>;
+  <span class="cssa">--menu-background-color-hover:</span> <span class="cssv">#ddd</span>;
+  <span class="cssa">--menu-background-color-active:</span> <span class="cssv">#ccc</span>;
+  <span class="cssa">--menu-color:</span> <span class="cssv">#444</span>;
+  <span class="cssa">--menu-color-active:</span> <span class="cssv">#000</span>;
+  <span class="cssa">--menu-link-color:</span> <span class="cssv">#444</span>;
+  <span class="cssa">--menu-link-color-hover:</span> <span class="cssv">#666</span>;
+  <span class="cssa">--menu-link-color-active:</span> <span class="cssv">#000</span>;
+  <span class="cssa">--menu-dropdown-background-color:</span> <span class="cssv">#fff</span>;
+  <span class="cssa">--menu-dropdown-border-color:</span> <span class="cssv">#e9e9e9</span>;
+
   <span class="cssa">--button-color:</span> <span class="cssv">#fff</span>;
-  <span class="cssa">--button-color-hover:</span> <span class="cssv">#fff</span>;
+  <span class="cssa">--button-color-hover:</span> <span class="cssv">#f5f5f5</span>;
   <span class="cssa">--button-background-color:</span> <span class="cssv">#007bff</span>;
   <span class="cssa">--button-background-color-hover:</span> <span class="cssv">#0069d9</span>;
   <span class="cssa">--button-border-color:</span> <span class="cssv">#007bff</span>;
@@ -100,10 +108,20 @@
   <span class="cssa">--form-focus-color:</span> <span class="cssv">#495057</span>;
   <span class="cssa">--form-focus-border-color:</span> <span class="cssv">#8bbafe</span>;
   <span class="cssa">--form-focus-shadow:</span> <span class="cssv">rgba(13, 110, 253, .25)</span>;
+  <span class="cssa">--form-required-color:</span> <span class="cssv">#dc3545</span>;
+  <span class="cssa">--form-required-border-color:</span> <span class="cssv">#dc3545</span>;
+  <span class="cssa">--form-focus-required-shadow:</span> <span class="cssv">rgba(253, 110, 13, .25)</span>;
+  <span class="cssa">--form-valid-color:</span> <span class="cssv">#28a745</span>;
+  <span class="cssa">--form-valid-border-color:</span> <span class="cssv">#28a745</span>;
+  <span class="cssa">--form-valid-shadow:</span> <span class="cssv">rgba(40, 167, 69, .25)</span>;
 
-  <span class="cssa">--nav-background-color:</span> <span class="cssv">#fff</span>;
-  <span class="cssa">--nav-border-color:</span> <span class="cssv">#e9e9e9</span>;
-  <span class="cssa">--nav-border-radius:</span> <span class="cssv">.25rem</span>;
+  <span class="cssa">--slidertron-height:</span> <span class="cssv">400px</span>;
+  <span class="cssa">--slidertron-background-color:</span> <span class="cssv">#ddd</span>;
+
+  <span class="cssa">--jumbotron-background-color:</span> <span class="cssv">#ddd</span>;
+
+  <span class="cssa">--badge-background-color:</span> <span class="cssv">#5755d9</span>;
+  <span class="cssa">--badge-color:</span> <span class="cssv">#fff</span>;
 
   <span class="cssa">--dialog-background-color:</span> <span class="cssv">#fff</span>;
   <span class="cssa">--dialog-border-color:</span> <span class="cssv">#e9e9e9</span>;
@@ -143,13 +161,53 @@
   <span class="cssa">--danger-color:</span> <span class="cssv">#721c24</span>;
   <span class="cssa">--danger-link:</span> <span class="cssv">#491217</span>;
 
+  <span class="cssa">--code-background-color:</span> <span class="cssv">#f8f9fa</span>;
+  <span class="cssa">--code-color:</span> <span class="cssv">#000</span>;
+  <span class="cssa">--code-border-color:</span> <span class="cssv">#e9e9e9</span>;
+
   <span class="cssa">--justify-important:</span> <span class="cssv">center</span>;
   <span class="cssa">--justify-normal:</span> <span class="cssv">left</span>;
 
   <span class="cssa">--width-card:</span> <span class="cssv">285px</span>;
   <span class="cssa">--width-card-medium:</span> <span class="cssv">460px</span>;
   <span class="cssa">--width-card-wide:</span> <span class="cssv">800px</span>;
-  <span class="cssa">--width-content:</span> <span class="cssv">100%</span>;
+  <span class="cssa">--width-content:</span> <span class="cssv">100%</span>; }
+
+<span class="csse">@media</span> (<span class="cssa">prefers-color-scheme:</span> <span class="cssv">dark</span>) {
+  <span class="csse">:root</span> {
+    <span class="cssa">--body-background-color:</span> <span class="cssv">#333</span>;
+    <span class="cssa">--color:</span> <span class="cssv">#f7f7f7</span>;
+    <span class="cssa">--color-muted:</span> <span class="cssv">#aaa</span>;
+    <span class="cssa">--link-color:</span> <span class="cssv">#007bff</span>;
+    <span class="cssa">--link-color-hover:</span> <span class="cssv">#0056b3</span>;
+    <span class="cssa">--content-background-color:</span> <span class="cssv">#555</span>;
+    <span class="cssa">--content-border-color:</span> <span class="cssv">#007bff</span>;
+    <span class="cssa">--box-shadow-color:</span> <span class="cssv">#bbbbbb10</span>;
+    <span class="cssa">--border-color:</span> <span class="cssv">#444</span>;
+
+    <span class="cssa">--menu-background-color:</span> <span class="cssv">#343a40</span>;
+    <span class="cssa">--menu-background-color-hover:</span> <span class="cssv">#454b51</span>;
+    <span class="cssa">--menu-background-color-active:</span> <span class="cssv">#454b51</span>;
+    <span class="cssa">--menu-color:</span> <span class="cssv">#fff</span>;
+    <span class="cssa">--menu-color-active:</span> <span class="cssv"></span>;
+    <span class="cssa">--menu-link-color:</span> <span class="cssv">#ffffff80</span>;
+    <span class="cssa">--menu-link-color-hover:</span> <span class="cssv">#ffffff40</span>;
+    <span class="cssa">--menu-link-color-active:</span> <span class="cssv">#fff</span>;
+    <span class="cssa">--menu-dropdown-background-color:</span> <span class="cssv">#343a40</span>;
+    <span class="cssa">--menu-dropdown-border-color:</span> <span class="cssv">#666</span>;
+
+    <span class="cssa">--table-background-color:</span> <span class="cssv">#444</span>;
+    <span class="cssa">--table-color:</span> <span class="cssv">#fff</span>;
+    <span class="cssa">--table-head-background-color:</span> <span class="cssv">#000</span>;
+    <span class="cssa">--table-head-color:</span> <span class="cssv">#fff</span>;
+    <span class="cssa">--table-border-color:</span> <span class="cssv">#666</span>;
+    <span class="cssa">--table-zebra-background:</span> <span class="cssv">#555</span>;
+
+    <span class="cssa">--jumbotron-background-color:</span> <span class="cssv">#222</span>;
+
+    <span class="cssa">--code-background-color:</span> <span class="cssv">#222</span>;
+    <span class="cssa">--code-color:</span> <span class="cssv">#fff</span>;
+    <span class="cssa">--code-border-color:</span> <span class="cssv">#666</span>; }
 }
 
 <span class="comment">/*  Extra small devices (portrait phones, less than 576px)
@@ -585,10 +643,10 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <h2 id="respheadermenu">Responsive Header Menu with Dropdown</h2>
       <p>This area is made up of a <code>&lt;header/&gt;</code> block element and a styled list that uses <code>role="menubar"</code> to seperate the list styling from interfering with standard lists.
     </div>
-    <header>
+    <main>
       <nav role="menubar">
-        <input type="checkbox" id="mobile-menu">
-        <label for="mobile-menu" onclick>Menu</label>
+        <input class="menubar-input" type="checkbox" id="mobile-menu">
+        <label class="menubar-label" for="mobile-menu" onclick>Menu</label>
         <ul>
           <li>Menu Item 1</li>
           <li><a href="#">Menu Item 2</a></li>
@@ -600,27 +658,25 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
           </li>
         </ul>
       </nav>
-    </header>
+    </main>
     <div class="notelements">
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;header&gt;</span>
-  <span class="e">&lt;nav</span> <span class="a">role=</span><span class="av">"menubar"</span><span class="e">&gt;</span>
-    <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"checkbox"</span> <span class="a">id=</span><span class="av">"mobile-menu"</span><span class="e">&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"mobile-menu"</span> <span class="a">onclick</span><span class="e">&gt;</span>Menu<span class="e">&lt;/label&gt;</span>
-    <span class="e">&lt;ul&gt;</span>
-      <span class="e">&lt;li&gt;</span>Menu Item 1<span class="e">&lt;/li&gt;</span>
-      <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Menu Item 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Dropdown Menu Item<span class="e">&lt;/a&gt;</span>
-        <span class="e">&lt;ul&gt;</span>
-          <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 1<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="e">&lt;/ul&gt;</span>
-      <span class="e">&lt;/li&gt;</span>
-    <span class="e">&lt;/ul&gt;</span>
-  <span class="e">&lt;/nav&gt;</span>
-<span class="e">&lt;/header&gt;</span>
+<span class="e">&lt;nav</span> <span class="a">role=</span><span class="av">"menubar"</span><span class="e">&gt;</span>
+  <span class="e">&lt;input</span> <span class="a">class=</span><span class="av">"menubar-input"</span> <span class="a">type=</span><span class="av">"checkbox"</span> <span class="a">id=</span><span class="av">"mobile-menu"</span><span class="e">&gt;</span>
+  <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"menubar-label"</span> <span class="a">for=</span><span class="av">"mobile-menu"</span> <span class="a">onclick</span><span class="e">&gt;</span>Menu<span class="e">&lt;/label&gt;</span>
+  <span class="e">&lt;ul&gt;</span>
+    <span class="e">&lt;li&gt;</span>Menu Item 1<span class="e">&lt;/li&gt;</span>
+    <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Menu Item 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Dropdown Menu Item<span class="e">&lt;/a&gt;</span>
+      <span class="e">&lt;ul&gt;</span>
+        <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 1<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="e">&lt;/ul&gt;</span>
+    <span class="e">&lt;/li&gt;</span>
+  <span class="e">&lt;/ul&gt;</span>
+<span class="e">&lt;/nav&gt;</span>
 </code>
 </pre>
       </figure>
@@ -1079,9 +1135,19 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <section>
         <form>
           <fieldset>
-            <legend>Form title</legend>
-            <label for="input1">Input label</label>
-            <input type="text" id="input1" name="input1" placeholder="Input Placeholder">
+            <legend>Form Title</legend>
+            <label for="input1">Text Input Label</label>
+            <input type="text" id="input1" name="input1" placeholder="Text Input Placeholder">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Email Placeholder">
+            <div class="requirements alert alert-danger">
+              Must be a valid email address.
+            </div>
+            <Label for="input2">Password Label</label>
+            <input type="password" id="input2" name="input2" placeholder="Password Placeholder" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+            <div class="requirements alert alert-danger">
+              Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+            </div>
             <label for="dateinput">Date (unstyled WIP)</label>
             <input type="date" id="dateinput" name="dateinput">
             <label for="timeinput">Time (unstyled WIP)</label>
@@ -1098,17 +1164,17 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
             <input type="checkbox" id="checkboxinput" name="checkboxinput"><br>
             <label for="radioinput">Radio</label><br>
             <input type="radio" id="radioinput" name="radioinput"><br>
-            <label for="progress">Progress label</label>
+            <label for="progress">Progress Label</label>
             <progress id="progress" value="80" max="100"></progress>
-            <label for="meter">Meter label</label>
+            <label for="meter">Meter Label</label>
             <meter id="meter" min="0" low="10" optimum="50" high="90" max="100"></meter>
-            <label for="select">Select label</label>
-            <select id="select">
+            <label for="select">Select Label</label>
+            <select id="select" required>
               <option value="option1">option1</option>
               <option value="option2">option2</option>
             </select>
-            <label for="textarea1">Textarea label:</label>
-            <textarea id="textarea1" placeholder="Textarea Placeholder"></textarea>
+            <label for="textarea1">Textarea Label</label>
+            <textarea id="textarea1" placeholder="Textarea Placeholder" required></textarea>
             <button type="submit">Submit</button>
           </fieldset>
         </form>
@@ -1120,9 +1186,19 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
 <code>
 <span class="e">&lt;form&gt;</span>
   <span class="e">&lt;fieldset&gt;</span>
-    <span class="e">&lt;legend&gt;</span>Form title<span class="e">&lt;/legend&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"input1"</span><span class="e">&gt;</span>Input label<span class="e">&lt;/label&gt;</span>
-    <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"text"</span> <span class="a">id=</span><span class="av">"input1"</span> <span class="a">name=</span><span class="av">"input1"</span><span class="a">placeholder=</span><span class="av">"Input Placeholder"</span><span class="e">&gt;</span>
+    <span class="e">&lt;legend&gt;</span>Form Title<span class="e">&lt;/legend&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"input1"</span></span><span class="e">&gt;</span>Text Input Label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"text"</span> <span class="a">id=</span><span class="av">"input1"</span> <span class="a">name=</span><span class="av">"input1"</span> <span class="a">placeholder=</span><span class="av">"Text Input Placeholder"</span><span class="e">&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"email"</span><span class="e">&gt;</span>Email Address<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"email"</span> <span class="a">id=</span><span class="av">"email"</span> <span class="a">name=</span><span class="av">"email"</span> <span class="a">required</span> <span class="a">placeholder=</span><span class="av">"Email Placeholder"</span><span class="e">&gt;</span>
+    <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"requirements alert alert-danger"</span><span class="e">&gt;</span>
+      Must be a valid email address.
+    <span class="e">&lt;/div&gt;</span>
+    <span class="e">&lt;Label</span> <span class="a">for=</span><span class="av">"input2"</span><span class="e">&gt;</span>Password Label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"password"</span> <span class="a">id=</span><span class="av">"input2"</span> <span class="a">name=</span><span class="av">"input2"</span> <span class="a">placeholder=</span><span class="av">"Password Placeholder"</span> <span class="a">required</span> <span class="a">pattern=</span><span class="av">"(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"</span><span class="e">&gt;</span>
+    <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"requirements alert alert-danger"</span><span class="e">&gt;</span>
+      Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+    <span class="e">&lt;/div&gt;</span>
     <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"dateinput"</span><span class="e">&gt;</span>Date (unstyled WIP)<span class="e">&lt;/label&gt;</span>
     <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"date"</span> <span class="a">id=</span><span class="av">"dateinput"</span> <span class="a">name=</span><span class="av">"dateinput"</span><span class="e">&gt;</span>
     <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"timeinput"</span><span class="e">&gt;</span>Time (unstyled WIP)<span class="e">&lt;/label&gt;</span>
@@ -1139,17 +1215,17 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
     <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"checkbox"</span> <span class="a">id=</span><span class="av">"checkboxinput"</span> <span class="a">name=</span><span class="av">"checkboxinput"</span><span class="e">&gt;&lt;br&gt;</span>
     <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"radioinput"</span><span class="e">&gt;</span>Radio<span class="e">&lt;/label&gt;&lt;br&gt;</span>
     <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">id=</span><span class="av">"radioinput"</span> <span class="a">name=</span><span class="av">"radioinput"</span><span class="e">&gt;&lt;br&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"progress"</span><span class="e">&gt;</span>Progress label<span class="e">&lt;/label&gt;</span>
-    <span class="e">&lt;progress</span> <span class="a">id=</span><span class="av">"progress"</span> <span class="a">value=</span><span classs="av">"80"</span> <span class="a">max=</span><span class="av">"100"</span><span class="e">&gt;&lt;/progress&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"meter"</span><span class="e">&gt;</span>Meter label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"progress"</span><span class="e">&gt;</span>Progress Label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;progress</span> <span class="a">id=</span><span class="av">"progress"</span> <span class="a">value=</span><span class="av">"80"</span> <span class="a">max=</span><span class="av">"100"</span><span class="e">&gt;&lt;/progress&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"meter"</span><span class="e">&gt;</span>Meter Label<span class="e">&lt;/label&gt;</span>
     <span class="e">&lt;meter</span> <span class="a">id=</span><span class="av">"meter"</span> <span class="a">min=</span><span class="av">"0"</span> <span class="a">low=</span><span class="av">"10"</span> <span class="a">optimum=</span><span class="av">"50"</span> <span class="a">high=</span><span class="av">"90"</span> <span class="a">max=</span><span class="av">"100"</span><span class="e">&gt;&lt;/meter&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"select"</span><span class="e">&gt;</span>Select label<span class="e">&lt;/label&gt;</span>
-    <span class="e">&lt;select</span> <span class="a">id=</span><span class="av">"select"</span><span class="e">&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"select"</span><span class="e">&gt;</span>Select Label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;select</span> <span class="a">id=</span><span class="av">"select"</span> <span class="a">required</span><span class="e">&gt;</span>
       <span class="e">&lt;option</span> <span class="a">value=</span><span class="av">"option1"</span><span class="e">&gt;</span>option1<span class="e">&lt;/option&gt;</span>
       <span class="e">&lt;option</span> <span class="a">value=</span><span class="av">"option2"</span><span class="e">&gt;</span>option2<span class="e">&lt;/option&gt;</span>
     <span class="e">&lt;/select&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"textarea1"</span><span class="e">&gt;</span>Textarea label:<span class="e">&lt;/label&gt;</span>
-    <span class="e">&lt;textarea</span> <span class="a">id=</span><span class="av">"textarea1"</span> <span class="a">placeholder=</span><span class="av">"Textarea Placeholder"</span><span class="e">&gt;&lt;/textarea&gt;</span>
+    <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"textarea1"</span><span class="e">&gt;</span>Textarea Label<span class="e">&lt;/label&gt;</span>
+    <span class="e">&lt;textarea</span> <span class="a">id=</span><span class="av">"textarea1"</span> <span class="a">placeholder=</span><span class="av">"Textarea Placeholder"</span> <span class="a">required</span><span class="e">&gt;&lt;/textarea&gt;</span>
     <span class="e">&lt;button</span> <span class="a">type=</span><span class="av">"submit"</span><span class="e">&gt;</span>Submit<span class="e">&lt;/button&gt;</span>
   <span class="e">&lt;/fieldset&gt;</span>
 <span class="e">&lt;/form&gt;</span>
@@ -1399,6 +1475,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
 </pre>
       </figure>
       <a class="top" href="#top">Top</a>
+      <hr>
       <h2 id="helpers">Helpers</h2>
       <p>
         These Classes are available as extras for various User Interface utilities. We've tried to add classes that are common to many frameworks to help facilitate ease of transition.
@@ -1489,6 +1566,9 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
           e.preventDefault();
           return false;
         });
+        $('button[data-darkmode]').on('click',function(e){
+          $('body').toggleClass('dark');
+        });
         $('button.rotate').on('click', function(e) {
           $(this).toggleClass('landscape');
           $('button[data-rotate=true]').each(function() {
@@ -1530,6 +1610,9 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
         </li>
         <li>
           <button class="rotate" title="Toggle Landscape/Portrait"><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 12.80469,8.25 q 0,0.03906 -0.008,0.05469 -0.5,2.093751 -2.09376,3.394532 Q 9.10937,13 6.96875,13 5.82812,13 4.76172,12.570312 3.69531,12.140625 2.85938,11.34375 L 1.851562,12.351563 Q 1.703125,12.5 1.5,12.5 1.296875,12.5 1.148437,12.351563 1,12.203125 1,12 V 8.5 Q 1,8.296875 1.148437,8.148438 1.296875,8 1.5,8 H 5 Q 5.20312,8 5.35156,8.148438 5.5,8.296875 5.5,8.5 5.5,8.703125 5.35156,8.851562 L 4.28125,9.921875 Q 4.83594,10.4375 5.53906,10.71875 6.24219,11 7,11 8.04687,11 8.95313,10.492187 9.85937,9.984375 10.40625,9.09375 10.49215,8.960938 10.82031,8.179688 10.88281,8 11.05469,8 h 1.5 q 0.10156,0 0.17578,0.07422 0.0742,0.07422 0.0742,0.175781 z M 13,2 V 5.5 Q 13,5.703125 12.85156,5.851562 12.70313,6 12.5,6 H 9 Q 8.79687,6 8.64844,5.851562 8.5,5.703125 8.5,5.5 8.5,5.296875 8.64844,5.148438 L 9.72656,4.070312 Q 8.57031,3 7,3 5.95313,3 5.04688,3.507813 4.14063,4.015625 3.59375,4.90625 3.50785,5.039062 3.17969,5.820312 3.11719,6 2.94531,6 H 1.390625 Q 1.289062,6 1.214844,5.92578 1.140624,5.85156 1.140624,5.749999 V 5.695309 Q 1.648438,3.601562 3.25,2.300781 4.85156,1 7,1 8.14063,1 9.21875,1.433594 10.29687,1.867187 11.13281,2.65625 L 12.14844,1.648437 Q 12.29688,1.5 12.5,1.5 12.70313,1.5 12.85156,1.648437 13,1.796875 13,2 z"/></svg></i></button>
+        </li>
+        <li>
+          <button class="" title="Toggle Dark Mode" data-darkmode><i class="i"><svg role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="m 11.821425,1 q 0.46875,0 0.82031,0.311384 0.35157,0.311384 0.35157,0.780134 0,0.421875 -0.30134,1.01116 -2.22322,4.212054 -3.11384,5.035715 -0.64956,0.609375 -1.45982,0.609375 -0.84375,0 -1.44978,-0.61942 -0.60603,-0.61942 -0.60603,-1.469866 0,-0.857143 0.61608,-1.419643 l 4.27232,-3.877232 Q 11.345985,1 11.821425,1 z m -6.08705,6.924107 q 0.26116,0.508928 0.71317,0.870536 0.45201,0.361607 1.00781,0.508928 l 0.007,0.475447 q 0.0268,1.426339 -0.86719,2.32366 Q 5.700895,13 4.261155,13 q -0.82366,0 -1.45982,-0.311384 -0.63616,-0.311384 -1.0212,-0.853795 -0.38505,-0.54241 -0.57924,-1.225446 -0.1942,-0.683036 -0.1942,-1.473214 0.0469,0.03348 0.27455,0.200893 0.22768,0.16741 0.41518,0.29799 0.1875,0.130581 0.39509,0.24442 0.20759,0.113839 0.30804,0.113839 0.27455,0 0.3683,-0.247767 0.16741,-0.441965 0.38505,-0.753349 0.21763,-0.311383 0.4654,-0.508928 0.24776,-0.197545 0.58928,-0.31808 0.34152,-0.120536 0.68974,-0.170759 0.34821,-0.05022 0.83705,-0.07031 z"/></svg></i></button>
         </li>
       </ul>
     </div>

@@ -6,9 +6,8 @@ html, body {
 
 body,
 main,
-section,
-header {
-  background-color: #fff!important; }
+section {
+  background-color: var(--body-background-color); }
 
 body {
   width: 100%;
@@ -51,13 +50,18 @@ body {
 .notelements.intro {
   padding-top: 5rem;
   height: 100vh;
-  background:url(../img/intro.png) no-repeat;
-  background-size: cover; }
+  background-color: #fff;
+  background: linear-gradient(90deg, #fe688d 0%, #5f7ffd 100%); }
 
 .notelements.intro h1 {
   margin-bottom: 3rem;
   font-size: 1.2rem;
   text-align: center; }
+
+.notelements.intro h1 .logo {
+  font-size: 2.5em;
+  font-family: sans-serif;
+}
 
 .notelements.intro p {
   text-align: center; }
@@ -79,7 +83,7 @@ body {
   font-size: inherit; }
 
 .notelements a {
-  color: #00f;
+  color: #000;
   text-decoration: none; }
 
 .notelements a:hover {
@@ -142,3 +146,48 @@ body {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+
+body.dark {
+  --body-background-color: #333;
+  --color: #f7f7f7;
+  --color-muted: #aaa;
+  --link-color: #007bff;
+  --link-color-hover: #0056b3;
+  --content-background-color: #555;
+  --content-border-color: #007bff;
+  --box-shadow-color: #bbbbbb10;
+  --border-color: #444;
+
+  --menu-background-color: #343a40;
+  --menu-background-color-hover: #454b51;
+  --menu-background-color-active: #454b51;
+  --menu-color: #fff;
+  --menu-color-active: ;
+  --menu-link-color: #ffffff80;
+  --menu-link-color-hover: #ffffff40;
+  --menu-link-color-active: #fff;
+  --menu-dropdown-background-color: #343a40;
+  --menu-dropdown-border-color: #666;
+
+  --table-background-color: #444;
+  --table-color: #fff;
+  --table-head-background-color: #000;
+  --table-head-color: #fff;
+  --table-border-color: #666;
+  --table-zebra-background: #555;
+
+  --jumbotron-background-color: #222;
+
+  --code-background-color: #222;
+  --code-color: #fff;
+  --code-border-color: #666; }
+
+body.dark .notelements.intro {
+  background: linear-gradient(90deg, #a70116 0%, #0a19a6 100%); }
+
+body.dark .notelements {
+  position: relative;
+  background-color: #444; }
+
+body.dark .notelements a {
+  color: #fff; }
