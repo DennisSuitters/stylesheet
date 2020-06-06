@@ -1,4 +1,4 @@
-##{stylesheet}
+## {stylesheet}
 
 the Minimal HTML5 mostly classeless Stylesheet v0.8
 
