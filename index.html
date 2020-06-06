@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./stylesheet.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <meta name="description" content="the Minimal HTML5 mostly classless Stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="./img/favicon.png" type="image/png">
     <title>{stylesheet}v0.8 - the Minimal HTML5 mostly classless Stylesheet</title>
-    <script src="./script/dialog-polyfill.js"></script>
   </head>
   <body id="top">
     <div class="notelements intro">
@@ -23,24 +21,12 @@
       </p>
       <p>
         <ul>
+          <li><a href="extras.html">Go to Extra Components Page</a></li>
           <li><a href="#typography">Typography</a></li>
           <li><a href="#address">Address and Logo Area</a></li>
-          <li><a href="#respheadermenu">Responsive Header Menu with Dropdown</a></li>
-          <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-          <li><a href="#covertron">Covertron</a></li>
-          <li><a href="#jumbotron">Jumbotron</a></li>
-          <li><a href="#slidertron">Slidertron</a></li>
-          <li><a href="#avatars">Avatars</a></li>
-          <li><a href="#badges">Badges</a></li>
-          <li><a href="#cards">Cards</a></li>
           <li><a href="#tables">Tables</a></li>
-          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#cards">Cards</a></li>
           <li><a href="#forms">Forms</a></li>
-          <li><a href="#tooltips">Tooltips</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#dialogs">Dialogs</a></li>
-          <li><a href="#viewer360">360 Viewer</a></li>
-          <Li><a href="#comparisonslider">Comparison Slider</a></li>
           <li><a href="#footer">Page Footer</a></li>
           <li><a href="#helpers">Helper Classes</a></li>
         </ul>
@@ -236,6 +222,48 @@
 
 }
 
+</code>
+</pre>
+      </figure>
+      <a class="top" href="#top">Top</a>
+      <hr>
+      <h2 id="address">Address and Logo Area</h2>
+      <p>
+        This area is made up of an <code>&lt;address/&gt;</code> block element, with <code>&lt;aside/&gt;</code>.
+      </p>
+    </div>
+    <address>
+      <aside>
+        <a href="/"><img alt="Logo" src="./img/favicon.png"></a>
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+      <aside>
+        Address Information
+      </aside>
+    </address>
+    <div class="notelements">
+      <figure class="highlight">
+<pre>
+<code>
+<span class="e">&lt;address&gt;</span>
+  <span class="e">&lt;aside&gt;</span>
+    <span class="e">&lt;a </span><span class="a">href=</span><span class="av">"/"</span><span class="e">&gt;&lt;img </span><span class="a">src=</span><span class="av">"logo.png"</span> <span class="a">alt=</span><span class="av">"Alt Text"</span><span class="e">/&gt;&lt;/a&gt;</span>
+  <span class="e">&lt;/aside&gt;</span>
+  <span class="e">&lt;aside&gt;</span>
+    Address Information
+  <span class="e">&lt;/aside&gt;</span>
+  <span class="e">&lt;aside&gt;</span>
+    Address Information
+  <span class="e">&lt;/aside&gt;</span>
+  <span class="e">&lt;aside&gt;</span>
+    Address Information
+  <span class="e">&lt;/aside&gt;</span>
+<span class="e">&lt;/address&gt;</span>
 </code>
 </pre>
       </figure>
@@ -598,327 +626,6 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       </p>
       <a class="top" href="#top">Top</a>
       <hr>
-      <h2 id="address">Address and Logo Area</h2>
-      <p>
-        This area is made up of an <code>&lt;address/&gt;</code> block element, with <code>&lt;aside/&gt;</code>.
-      </p>
-    </div>
-    <address>
-      <aside>
-        <a href="/"><img alt="Logo" src="./img/stylesheet.png"></a>
-      </aside>
-      <aside>
-        Address Information
-      </aside>
-      <aside>
-        Address Information
-      </aside>
-      <aside>
-        Address Information
-      </aside>
-    </address>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;address&gt;</span>
-  <span class="e">&lt;aside&gt;</span>
-    <span class="e">&lt;a </span><span class="a">href=</span><span class="av">"/"</span><span class="e">&gt;&lt;img </span><span class="a">src=</span><span class="av">"logo.png"</span> <span class="a">alt=</span><span class="av">"Alt Text"</span><span class="e">/&gt;&lt;/a&gt;</span>
-  <span class="e">&lt;/aside&gt;</span>
-  <span class="e">&lt;aside&gt;</span>
-    Address Information
-  <span class="e">&lt;/aside&gt;</span>
-  <span class="e">&lt;aside&gt;</span>
-    Address Information
-  <span class="e">&lt;/aside&gt;</span>
-  <span class="e">&lt;aside&gt;</span>
-    Address Information
-  <span class="e">&lt;/aside&gt;</span>
-<span class="e">&lt;/address&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="respheadermenu">Responsive Header Menu with Dropdown</h2>
-      <p>This area is made up of a <code>&lt;header/&gt;</code> block element and a styled list that uses <code>role="menubar"</code> to seperate the list styling from interfering with standard lists.
-    </div>
-    <main>
-      <nav role="menubar">
-        <input class="menubar-input" type="checkbox" id="mobile-menu">
-        <label class="menubar-label" for="mobile-menu" onclick>Menu</label>
-        <ul>
-          <li>Menu Item 1</li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Dropdown Menu Item</a>
-            <ul>
-              <li><a href="#">Sublink 1</a></li>
-              <li><a href="#">Sublink 2</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;nav</span> <span class="a">role=</span><span class="av">"menubar"</span><span class="e">&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">class=</span><span class="av">"menubar-input"</span> <span class="a">type=</span><span class="av">"checkbox"</span> <span class="a">id=</span><span class="av">"mobile-menu"</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"menubar-label"</span> <span class="a">for=</span><span class="av">"mobile-menu"</span> <span class="a">onclick</span><span class="e">&gt;</span>Menu<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;ul&gt;</span>
-    <span class="e">&lt;li&gt;</span>Menu Item 1<span class="e">&lt;/li&gt;</span>
-    <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Menu Item 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Dropdown Menu Item<span class="e">&lt;/a&gt;</span>
-      <span class="e">&lt;ul&gt;</span>
-        <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 1<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="e">&lt;li&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Sublink 2<span class="e">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="e">&lt;/ul&gt;</span>
-    <span class="e">&lt;/li&gt;</span>
-  <span class="e">&lt;/ul&gt;</span>
-<span class="e">&lt;/nav&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="breadcrumbs">Breadcrumbs</h2>
-      <p>
-        Breadcrumbs are styled via a <code>data-content="breadcrumb"</code> data attribute, and <code>data-content="breadcrumb-item"</code> for each item.
-      </p>
-    </div>
-    <div class="breadcrumb">
-      <span class="breadcrumb-item"><a href="#">Item 1</a></span>
-      <span class="breadcrumb-item"><a href="#">Item 2</a></span>
-      <span class="breadcrumb-item"><a href="#">Item 3</a></span>
-      <span class="breadcrumb-item active">Active Item</span>
-    </div>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"breadcrumb"</span><span class="e">&gt;</span>
-  <span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"breadcrumb-item"</span><span class="e">&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Item 1<span class="e">&lt;/a&gt;&lt;/span&gt;</span>
-  <span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"breadcrumb-item"</span><span class="e">&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Item 2<span class="e">&lt;/a&gt;&lt;/span&gt;</span>
-  <span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"breadcrumb-item"</span><span class="e">&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Item 3<span class="e">&lt;/a&gt;&lt;/span&gt;</span>
-  <span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"breadcrumb-item active"</span><span class="e">&gt;</span>Active Item<span class="e">&lt;/span&gt;</span>
-<span class="e">&lt;/div&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="covertron">Covertron</h2>
-      <p>
-        A Covertron uses <code>class="covertron"</code> on a <code>&lt;section/&gt;</code> using <code>style="background-image:url(image.jpg);"</code> to display an image.
-      </p>
-    </div>
-    <section class="covertron" style="background-image:url(./img/cradle-in-autumn.jpg);"></section>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;section</span> <span class="a">class=</span><span class="av">"covertron"</span> <span class="a">style=</span><span class="av">"background-image:url(images.jpg);"</span><span class="e">&gt;&lt;/section&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="jumbotron">Jumbotron</h2>
-      <p>
-        Jumbotrons use a <code>&lt;section/&gt;</code> element with <code>class="jumbotron"</code> data attribute.
-      </p>
-    </div>
-    <section class="jumbotron">
-      <header>
-        <h1>Jumbotron</h1>
-      </header>
-      <h2>Page Heading with <i>Italics</i> and <u>Underline</u></h2>
-      <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      <p>Page Subheading with <mark>highlighting</mark></p>
-      <p><a href="#" role="button"><i>Italic Link Button</i></a>&nbsp;<a href="#" role="button"><b>Bold Link Button &rarr;</b></a></p>
-    </section>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;section</span> <span class="a">class=</span><span class="av">"jumbotron"</span><span class="e">&gt;</span>
-  <span class="e">&lt;header&gt;</span>
-    <span class="e">&lt;h1&gt;</span>Jumbotron<span class="e">&lt;/h1&gt;</span>
-  <span class="e">&lt;/header&gt;</span>
-  <span class="e">&lt;h2&gt;</span>Page Heading with <span class="e">&lt;i&gt;</span>Italics<span class="e">&lt;/i&gt;</span> and <span class="e">&lt;u&gt;</span>Underline<span class="e">&lt;/u&gt;&lt;/h2&gt;</span>
-  <span class="e">&lt;p&gt;</span>This is a modified jumbotron that occupies the entire horizontal space of its parent.<span class="e">&lt;/p&gt;</span>
-  <span class="e">&lt;p&gt;</span>Page Subheading with <span class="e">&lt;mark&gt;</span>highlighting<span class="e">&lt;/mark&gt;&lt;/p&gt;</span>
-  <span class="e">&lt;p&gt;&lt;a</span> <span class="a">href=</span><span class="av">"#"</span> <span class="a">role=</span><span class="av">"button"</span><span class="e">&gt;&lt;i&gt;</span>Italic Link Button<span class="e">&lt;/i&gt;&lt;/a&gt;</span>&nbsp;<span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span> <span class="a">role=</span><span class="av">"button"</span><span class="e">&gt;&lt;b&gt;</span>Bold Link Button &amp;rarr;<span class="e">&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;</span>
-<span class="e">&lt;/section&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="slidertron">Slidertron</h2>
-      <p>
-
-      </p>
-    </div>
-    <section class="slidertron">
-      <input checked id="slide1" name="slides" type="radio">
-      <input id="slide2" name="slides" type="radio">
-      <div class="slider-arrow-nav">
-        <label class="slider-arrow prev" for="slide1"></label>
-        <label class="slider-arrow prev" for="slide2"></label>
-      </div>
-      <div class="slider-arrow-nav">
-        <label class="slider-arrow next" for="slide1"></label>
-        <label class="slider-arrow next" for="slide2"></label>
-      </div>
-      <div class="slider-content">
-        <div class="slider slide1">
-          <img src="./img/autumn-in-lower-wilmot.jpg" alt="Slide 1">
-          <div class="slider-caption">
-            <h2>Slide 1</h2>
-            Caption for slide 1.
-          </div>
-        </div>
-        <div class="slider slide2">
-          <img src="./img/cradle-in-autumn.jpg" alt="Slide 2">
-          <div class="slider-caption">
-            <h2>Slide 2</h2>
-            Caption for slide 2.
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;section</span> <span class="a">cLass=</span><span class="av">"slidertron"</span><span class="e">&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">checked id=</span><span class="av">"slide1"</span> <span class="a">name=</span><span class="av">"slides"</span> <span class="a">type=</span><span class="av">"radio"</span><span class="e">&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">id=</span><span class="av">"slide2"</span> <span class="a">name=</span><span class="av">"slides"</span> <span class="a">type=</span><span class="av">"radio"</span><span class="e">&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-arrow-nav"</span><span class="e">&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"slider-arrow prev"</span> <span class="a">for=</span><span class="av">"slide1"</span><span class="e">&gt;&lt;/label&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"slider-arrow prev"</span> <span class="a">for=</span><span class="av">"slide2"</span><span class="e">&gt;&lt;/label&gt;</span>
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-arrow-nav"</span><span class="e">&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"slider-arrow next"</span> <span class="a">for=</span><span class="av">"slide1"</span><span class="e">&gt;&lt;/label&gt;</span>
-    <span class="e">&lt;label</span> <span class="a">class=</span><span class="av">"slider-arrow next"</span> <span class="a">for=</span><span class="av">"slide2"</span><span class="e">&gt;&lt;/label&gt;</span>
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-content"</span><span class="e">&gt;</span>
-    <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider slide1"</span><span class="e">&gt;</span>
-      <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.jpg"</span> <span class="a">alt=</span><span class="av">"Slide 1"</span><span class="e">&gt;</span>
-      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-caption"</span><span class="e">&gt;</span>
-        <span class="e">&lt;h2&gt;</span>Slide 1<span class="e">&lt;/h2&gt;</span>
-        Caption for slide 1.
-      <span class="e">&lt;/div&gt;</span>
-    <span class="e">&lt;/div&gt;</span>
-    <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider slide2"</span><span class="e">&gt;</span>
-      <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.jpg"</span> <span class="a">alt=</span><span class="av">"Slide 2"</span><span class="e">&gt;</span>
-      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"slider-caption"</span><span class="e">&gt;</span>
-        <span class="e">&lt;h2&gt;</span>Slide 2<span class="e">&lt;/h2&gt;</span>
-        Caption for slide 2.
-      <span class="e">&lt;/div&gt;</span>
-    <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;/div&gt;</span>
-<span class="e">&lt;/section&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="avatars">Avatars</h2>
-      <p>
-
-      </p>
-    </div>
-    <main>
-      <figure class="avatar extra-large">
-        <img src="img/avatar-1.png" alt="...">
-      </figure>
-      <figure class="avatar large">
-        <img src="img/avatar-1.png" alt="...">
-      </figure>
-      <figure class="avatar">
-        <img src="img/avatar-1.png" alt="...">
-      </figure>
-      <figure class="avatar small">
-        <img src="img/avatar-1.png" alt="...">
-      </figure>
-      <figure class="avatar extra-small">
-        <img src="img/avatar-1.png" alt="...">
-      </figure>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar extra-large"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar large"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar small"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-<span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"avatar extra-small"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-</code>
-</pre>
-      </figure>
-      <hr>
-      <h2 id="badge">Badges</h2>
-      <p>
-        Badges are often used as unread number indicators.<br>
-        Add the <code><span class="av">badge</span></code> class to non self closing elements. And add the <code><span class="a">data-badge</span></code> attribute to define the content of a badge. The badge will appear in the top-right direction of the element.<br>
-        <br>
-        If there is no <code><span class="a">data-badge</span></code> or the attribute is not specified, the badge will appear as a dot.
-      </p>
-    </div>
-    <main>
-      <span class="badge">
-        Notifications
-      </span>
-
-      <span class="badge" data-badge="8">
-        Notifications
-      </span>
-
-      <button class="badge" data-badge="8">
-        Button
-      </button>
-
-      <figure class="avatar large badge" data-badge="8">
-        <img src="img/avatar-1.png" alt="YZ">
-      </figure>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"badge"</span><span class="e">&gt;</span>
-  Notifications
-<span class="e">&lt;/span&gt;</span>
-
-<span class="e">&lt;span</span> <span class="a">class=</span><span class="av">"badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
-  Notifications
-<span class="e">&lt;/span&gt;</span>
-
-<span class="e">&lt;button</span> <span class="a">class=</span><span class="av">"badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
-  Button
-<span class="e">&lt;/button&gt;</span>
-
-<span class="e">&lt;figure <span class="a">class=</span><span class="av">"avatar large badge"</span> <span class="a">data-badge=</span><span class="av">"8"</span><span class="e">&gt;</span>
-  <span class="e">&lt;img</span> <span class="a">src=</span><span class="av">"image.png"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-<span class="e">&lt;/figure&gt;</span>
-</code>
-</pre>
-      </figure>
-      <hr>
       <h2 id="cards">Cards</h2>
       <p>
 
@@ -1054,77 +761,6 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       </figure>
       <a class="top" href="#top">Top</a>
       <hr>
-      <h2 id="tabs">Tabs Content</h2>
-      <p>
-
-      </p>
-    </div>
-    <main>
-      <section>
-        <div class="tabs">
-          <input type="radio" name="tabs" id="tab1" checked />
-          <label for="tab1">Tab 1</label>
-          <input type="radio" name="tabs" id="tab2" />
-          <label for="tab2">Tab 2</label>
-          <input type="radio" name="tabs" id="tab3" />
-          <label for="tab3">Tab 3</label>
-          <input type="radio" name="tabs" id="tab4" />
-          <label for="tab4">Tab 4</label>
-          <input type="radio" name="tabs" id="tab5" />
-          <label for="tab5">Tab 5</label>
-          <div class="tab content1">
-            Tab 1 content
-          </div>
-          <div class="tab content2">
-            Tab 2 content
-          </div>
-          <div class="tab content3">
-            Tab 3 content
-          </div>
-          <div class="tab content4">
-            Tab 4 content
-          </div>
-          <div class="tab content5">
-            Tab 5 content
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tabs"</span><span class="e">&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab1"</span> <span class="a">checked</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab1"</span><span class="e">&gt;</span>Tab 1<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab2"</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab2"</span><span class="e">&gt;</span>Tab 2<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab3"</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab3"</span><span class="e">&gt;</span>Tab 3<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab4"</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab4"</span><span class="e">&gt;</span>Tab 4<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;input</span> <span class="a">type=</span><span class="av">"radio"</span> <span class="a">name=</span><span class="av">"tabs"</span> <span class="a">id=</span><span class="av">"tab5"</span><span class="e">&gt;</span>
-  <span class="e">&lt;label</span> <span class="a">for=</span><span class="av">"tab5"</span><span class="e">&gt;</span>Tab 5<span class="e">&lt;/label&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content1"</span><span class="e">&gt;</span>
-    Tab 1 content
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content2"</span><span class="e">&gt;</span>
-    Tab 2 content
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content3"</span><span class="e">&gt;</span>
-    Tab 3 content
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content4"</span><span class="e">&gt;</span>
-    Tab 4 content
-  <span class="e">&lt;/div&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"tab content5"</span><span class="e">&gt;</span>
-    Tab 5 content
-  <span class="e">&lt;/div&gt;</span>
-<span class="e">&lt;/div&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
       <hr>
       <h2 id="forms">Forms</h2>
       <p>
@@ -1234,146 +870,12 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       </figure>
       <a class="top" href="#top">Top</a>
       <hr>
-      <h2 id="tooltips">Tooltips</h2>
-      <p>
-
-      </p>
-    </div>
-    <main>
-      <section>
-        <p>
-          <button data-tooltip="top" title="Tooltip Top">Top Tooltip</button><br>
-          <br>
-          <button data-tooltip="right" title="Tooltip Right">Right Tooltip</button><br>
-          <br>
-          <button data-tooltip="bottom" title="Tooltip Bottom">Bottom Tooltip</button><br>
-          <br>
-          <button data-tooltip="left" title="Tooltip Left">Left Tooltip</button><br>
-        </p>
-      </section>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"top"</span> <span class="a">title=</span><span class="av">"Tooltip Top"</span><span class="e">&gt;</span>Top Tooltip<span class="e">&lt;/button&gt;</span>
-
-<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"right"</span> <span class="a">title=</span><span class="av">"Tooltip Right"</span><span class="e">&gt;</span>Right Tooltip<span class="e">&lt;/button&gt;</span>
-
-<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"bottom"</span> <span class="a">title=</span><span class="av">"Tooltip Bottom"</span><span class="e">&gt;</span>Bottom Tooltip<span class="e">&lt;/button&gt;</span>
-
-<span class="e">&lt;button </span><span class="a">data-tooltip=</span><span class="av">"left"</span> <span class="a">title=</span><span class="av">"Tooltip Left"</span><span class="e">&gt;</span>Left Tooltip<span class="e">&lt;/button&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="dialogs">Dialogs</h2>
-      <p>
-        Using the <code>&lt;dialog/&gt;</code> element is done natively in Chrome and via a Polyfill in other Browsers.<br>
-        For more information visit this repository: <a href="https://github.com/GoogleChrome/dialog-polyfill">https://github.com/GoogleChrome/dialog-polyfill</a><br>
-        <br>
-        <button onclick="dialog.showModal();">Open Dialog</button>
-      </p>
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;dialog&gt;</span>
-  <span class="e">&lt;header&gt;</span>
-    <span class="e">&lt;h5&gt;</span>Dialog Heading<span class="e">&lt;/h5&gt;</span>
-    <span class="e">&lt;button </span><span class="a">type=</span><span class="av">"button"</span> <span class="a">class=</span><span class="av">"close"</span> <span class="a">aria-label=</span><span class="av">"Close"</span> <span class="a">onclick=</span><span class="av">"dialog.close();"</span><span class="e">&gt;</span>
-      <span class="e">&lt;span</span>
-        <span class="a">aria-hidden=</span><span class="av">"true"</span><span class="e">&gt;</span>
-        &times;
-      <span class="e">&lt;/span&gt;</span>
-    <span class="e">&lt;/button&gt;</span>
-  <span class="e">&lt;/header&gt;</span>
-  <span class="e">&lt;section&gt;</span>
-    Dialog Content
-  <span class="e">&lt;/section&gt;</span>
-  <span class="e">&lt;footer&gt;</span>
-    <span class="e">&lt;button </span><span class="a">onclick=</span><span class="av">"dialog.close();"</span><span class="e">&gt;</span>Close<span class="e">&lt;/button&gt;</span>
-  <span class="e">&lt;/footer&gt;</span>
-<span class="e">&lt;/dialog&gt;</span>
-<span class="e">&lt;script </span><span class="a">src=</span><span class="av">"dialog-polyfill.js"</span><span class="e">&gt;&lt;/script&gt;</span>
-<span class="e">&lt;script&gt;</span>
-  var dialog = document.querySelector('dialog');
-  dialogPolyfill.registerDialog(dialog);
-<span class="e">&lt;/script&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="alerts">Alerts</h2>
-      <p>
-        Alerts provide feedback messages for typical actions and include some contextual styling depending on the type of alert required.<br>
-        The width of Alerts depend on their parent containers width, unless their width is explicitly changed on the element or in the stylesheet declarations.
-      </p>
-    </div>
-    <main>
-      <section>
-        <div class="alert">
-          <h1>This is an default Alert Heading!!!</h1>
-          This is standard text with a <a href="#">Link</a>.
-        </div>
-        <div class="alert alert-info">
-          <h1>This is an info Alert Heading!!!</h1>
-          This is standard text with a <a href="#">Link</a>.
-        </div>
-        <div class="alert alert-danger">
-          <h1>This is an danger Alert Heading!!!</h1>
-          This is standard text with a <a href="#">Link</a>.
-        </div>
-        <div class="alert alert-success">
-          <h1>This is an success Alert Heading!!!</h1>
-          This is standard text with a <a href="#">Link</a>.
-        </div>
-        <div class="alert alert-warning">
-          <h1>This is an warning Alert Heading!!!</h1>
-          This is standard text with a <a href="#">Link</a>.
-        </div>
-      </section>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"alert"</span><span class="e">&gt;</span>
-  <span class="e">&lt;h1&gt;</span>This is the default Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
-  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
-<span class="e">&lt;/div&gt;</span>
-
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"alert alert-info"</span><span class="e">&gt;</span>
-  <span class="e">&lt;h1&gt;</span>This is an Info Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
-  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
-<span class="e">&lt;/div&gt;</span>
-
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"alert alert-danger"</span><span class="e">&gt;</span>
-  <span class="e">&lt;h1&gt;</span>This is a Danger Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
-  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
-<span class="e">&lt;/div&gt;</span>
-
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"alert alert-success"</span><span class="e">&gt;</span>
-  <span class="e">&lt;h1&gt;</span>This is a Success Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
-  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
-<span class="e">&lt;/div&gt;</span>
-
-<span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"alert alert-warning"</span><span class="e">&gt;</span>
-  <span class="e">&lt;h1&gt;</span>This is a Warning Alert Heading!!!<span class="e">&lt;/h1&gt;</span>
-  This is standard text with a <span class="e">&lt;a</span> <span class="a">href=</span><span class="av">"#"</span><span class="e">&gt;</span>Link<span class="e">&lt;/a&gt;.</span>
-<span class="e">&lt;/div&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
       <h2 id="footer">Footer (Page Footer)</h2>
       <p>
         The page footer for using at the bottom of most of a websites page layout uses <code>class="pagefooter"</code>.
       </p>
     </div>
-    <footer class="pagefooter">
+    <footer>
       <aside>
         Address Information
       </aside>
@@ -1391,7 +893,7 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
       <figure class="highlight">
 <pre>
 <code>
-<span class="e">&lt;footer</span> <span class="a">class=</span><span class="av">"pagefooter"</span><span class="e">&gt;</span>
+<span class="e">&lt;footer&gt;</span>
   <span class="e">&lt;aside&gt;</span>
     Address Information
   <span class="e">&lt;/aside&gt;</span>
@@ -1405,72 +907,6 @@ For example, <span class="e">&lt;code&gt;</span>&amp;lt;section&amp;gt;<span cla
     Address Information
   <span class="e">&lt;/aside&gt;</span>
 <span class="e">&lt;/footer&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="viewer360">360 Viewer</h2>
-      <p>
-        360-Degree Viewer is an interactive product photo viewer. It is built in pure CSS.<br>
-        <br>
-        You will need to use your own product image sprite (all angle of photos in one image) and set the attribute <code><span class="a">max</span></code> to the image numbers to use this component.<br>
-        <br>
-        The default image numbers in CSS are <code><span class="av">36</span></code>. You can edit the stylesheet and add more numbers.
-      </p>
-    </div>
-    <main>
-      <div class="viewer-360">
-        <input class="viewer-slider" type="range" min="1" max="36" value="1" oninput="this.setAttribute('value', this.value);">
-        <figure class="viewer-image" style="background-image:url('img/laptop.jpg');"></figure>
-      </div>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;div <span class="a">class=</span><span class="av">"viewer-360"</span><span class="e">&gt;</span>
-  <span class="e">&lt;input <span class="a">class=</span><span class="av">"viewer-slider"</span> <span class="a">type=</span><span class="av">"range"</span> <span class="a">min=</span><span class="av">"1"</span> <span class="a">max=</span><span class="av">"36"</span> <span class="a">value=</span><span class="av">"1"</span> <span class="a">oninput=</span><span class="av">"this.setAttribute('value', this.value);"</span><span class="e">&gt;</span>
-  <span class="e">&lt;figure <span class="a">class=</span><span class="av">"viewer-image"</span> <span class="a">style=</span><span class="av">"background-image:url('image.jpg');"</span><span class="e">&gt;&lt;/figure&gt;</span>
-<span class="e">&lt;/div&gt;</span>
-</code>
-</pre>
-      </figure>
-      <a class="top" href="#top">Top</a>
-      <hr>
-      <h2 id="comparisonslider">Comparison Slider</h2>
-      <p>
-
-      </p>
-    </div>
-    <main>
-      <div class="comparison">
-        <div class="comparison-slider">
-          <figure class="comparison-before"><img src="img/cradle-in-autumn-1.jpg" alt="macOS Sierra Wallpaper">
-            <div class="comparison-label">After</div>
-          </figure>
-          <figure class="comparison-after"><img src="img/cradle-in-autumn-2.jpg" alt="macOS Sierra Wallpaper">
-            <div class="comparison-label">Before</div>
-            <textarea class="comparison-resizer" readonly></textarea>
-          </figure>
-        </div>
-      </div>
-    </main>
-    <div class="notelements">
-      <figure class="highlight">
-<pre>
-<code>
-<span class="e">&lt;div <span class="a">class=</span><span class="av">"comparison"</span><span class="e">&gt;</span>
-  <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-slider"</span><span class="e">&gt;</span>
-    <span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"comparison-before"</span><span class="e">&gt;&lt;img</span> <span class="a">src=</span><span class="av">"image-1.jpg"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-label"</span><span class="e">&gt;</span>After<span class="e">&lt;/div&gt</span>
-    <span class="e">&lt;/figure&gt;</span>
-    <span class="e">&lt;figure</span> <span class="a">class=</span><span class="av">"comparison-after"</span><span class="e">&gt;&lt;img</span> <span class="a">src=</span><span class="av">"image-2.jpg"</span> <span class="a">alt=</span><span class="av">"..."</span><span class="e">&gt;</span>
-      <span class="e">&lt;div</span> <span class="a">class=</span><span class="av">"comparison-label"</span><span class="e">&gt;</span>Before<span class="e">&lt;/div&gt</span>
-      <span class="e">&lt;textarea</span> <span class="a">class=</span><span class="av">"comparison-resizer"</span> <span class="a">readonly<?span><span class="e">&gt;&lt/textarea&gt;</span>
-    <span class="e">&lt;/figure&gt;</span>
-  <span class="e">&lt;/div&gt;</span>
-<span class="e">&lt;/div&gt;</span>
 </code>
 </pre>
       </figure>

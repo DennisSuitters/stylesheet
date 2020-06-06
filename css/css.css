@@ -1,8 +1,8 @@
 html, body {
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
-  background-color: #333; }
+  background-color: #333;
+  width: 100%;
+  height: 100%; }
 
 body,
 main,
@@ -10,48 +10,47 @@ section {
   background-color: var(--body-background-color); }
 
 body {
+  transition: max-width .35s ease-out,
+              max-height .35s ease-out;
+  margin: 0 auto;
+  box-shadow: 0 0 50px #000;
+  background: #fff;
   width: 100%;
   max-width: 100%;
   height: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 0 50px #000;
-  -webkit-transition: max-width .35s ease-out, max-height .35s ease-out;
-  -moz-transition: max-width .35s ease-out, max-height .35s ease-out;
-  -ms-transition: max-width .35s ease-out, max-height .35s ease-out;
-  -o-transition: max-width .35s ease-out, max-height .35s ease-out;
-  transition: max-width .35s ease-out, max-height .35s ease-out; }
+  max-height: 100%; }
 
 
 .i {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: inline-block;
+  vertical-align: middle;
   width: 14px;
   height: 14px;
   line-height: 0;
-  vertical-align: middle;
   text-rendering: auto;
-  fill: currentColor;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  fill: currentColor; }
 
 .i svg {
-  width: 14px!important;
-  height: 14px!important; }
+  width: 14px !important;
+  height: 14px !important; }
 
 .notelements {
   position: relative;
   background-color: #ffffe5;
+  padding: 20px;
   width: 100%;
   height: auto;
-  padding: 20px;
   font-size: 1.2rem; }
 
 .notelements.intro {
-  padding-top: 5rem;
-  height: 100vh;
+  background: linear-gradient(90deg,
+                              #fe688d 0%,
+                              #5f7ffd 100%);
   background-color: #fff;
-  background: linear-gradient(90deg, #fe688d 0%, #5f7ffd 100%); }
+  padding-top: 5rem;
+  height: 100vh; }
 
 .notelements.intro h1 {
   margin-bottom: 3rem;
@@ -72,8 +71,8 @@ body {
 .notelements.intro ul li {
   display: inline-grid;
   width: 32%;
-  list-style: none;
-  font-size: .9rem; }
+  font-size: .9rem;
+  list-style: none; }
 
 .notelements a.top {
   float: right; }
@@ -92,34 +91,32 @@ body {
 #resizer {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   z-index: 2000;
   width: 100%;
   text-align: center; }
 
 #resizer ul {
-  background-color: #ccc;
-  list-style: none;
-  font-size: 17px;
-  display: inline-block;
-  width: auto;
   -webkit-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
-  -moz-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
-  -ms-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
-  -o-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
-  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+     -moz-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
+      -ms-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
+       -o-filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
+          filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .25));
+  -webkit-padding-start: 10px;
+  -webkit-padding-end: 10px;
+  display: inline-block;
   transform: translateZ(0);
   margin: -2px auto 0 auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #ccc;
   padding-bottom: 3px;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
+  width: auto;
+  font-size: 17px;
+  list-style: none; }
 
 #resizer ul li {
   display: inline-block;
@@ -134,17 +131,9 @@ body {
 
 .rotate i svg,
 [data-rotate] i svg {
-  -webkit-transition: all .15s linear;
-  -moz-transition: all .15s linear;
-  -ms-transition: all .15s linear;
-  -o-transition: all .15s linear;
   transition: all .15s linear; }
 
 .landscape i svg {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
 body.dark {
@@ -183,7 +172,9 @@ body.dark {
   --code-border-color: #666; }
 
 body.dark .notelements.intro {
-  background: linear-gradient(90deg, #a70116 0%, #0a19a6 100%); }
+  background: linear-gradient(90deg,
+                              #a70116 0%,
+                              #0a19a6 100%); }
 
 body.dark .notelements {
   position: relative;
